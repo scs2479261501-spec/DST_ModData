@@ -1,0 +1,26 @@
+{
+  "batch_id": "top500_comments_20260319",
+  "analyzed_at_utc": "2026-03-19T13:47:52+00:00",
+  "inputs": {
+    "comments_csv": "data\\processed\\steam_workshop\\top500_comments_20260319\\top_comments.csv",
+    "comments_jsonl": "data\\processed\\steam_workshop\\top500_comments_20260319\\top_comments.jsonl"
+  },
+  "parameters": {
+    "left_group": "top_100",
+    "right_group": "rank_300_500",
+    "min_comment_count": 20,
+    "top_keywords": 30
+  },
+  "counts": {
+    "comments_loaded": 17782,
+    "keywords_retained": 551,
+    "left_group_keywords_exported": 30,
+    "right_group_keywords_exported": 30
+  },
+  "outputs": {
+    "group_summary_csv": "data\\processed\\analysis\\comment_group_summary_top500_comments_20260319.csv",
+    "keyword_comparison_csv": "data\\processed\\analysis\\comment_keyword_comparison_top500_comments_20260319.csv",
+    "left_group_keywords_csv": "data\\processed\\analysis\\comment_keywords_top_100_top500_comments_20260319.csv",
+    "right_group_keywords_csv": "data\\processed\\analysis\\comment_keywords_rank_300_500_top500_comments_20260319.csv"
+  }
+}

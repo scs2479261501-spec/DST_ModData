@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Raw data (too large for GitHub)
+data/raw/
+data/processed/steam_api/api_full_20260319/
+data/processed/steam_api/api_full_smoke_20260319/
+data/processed/steam_workshop/top500_comments_20260319/
+data/processed/steam_workshop/top_comments_smoke_20260319/
+
+# PowerBI binary
+*.pbix
+
+# Temp files
+.codex_tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project planning (Chinese encoding broken)
+DST_Mod*.md
+project_tree_*.txt
+AGENTS.md

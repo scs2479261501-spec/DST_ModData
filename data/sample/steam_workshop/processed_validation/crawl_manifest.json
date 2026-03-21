@@ -1,0 +1,36 @@
+{
+  "batch_id": "validation_20260319",
+  "started_at_utc": "2026-03-19T01:54:06+00:00",
+  "completed_at_utc": "2026-03-19T01:54:15+00:00",
+  "source_method": "public_workshop_html",
+  "api_status": "Steam Web API QueryFiles requires a key and was not used in this batch.",
+  "crawl_parameters": {
+    "pages": 1,
+    "max_items": 5,
+    "fetch_comments": true,
+    "comment_item_limit": 2,
+    "comment_pages": 1,
+    "sleep_seconds": 0.5
+  },
+  "browse_pages": [
+    {
+      "page_number": 1,
+      "range_start": 1,
+      "range_end": 30,
+      "total_entries": 22905,
+      "items_found": 30,
+      "raw_browse_path": "data\\raw\\steam_workshop\\validation_20260319\\browse\\browse_page_0001.html"
+    }
+  ],
+  "counts": {
+    "items_discovered": 5,
+    "mods_collected": 5,
+    "comments_collected": 100
+  },
+  "outputs": {
+    "mods_csv": "data\\processed\\steam_workshop\\validation_20260319\\mods.csv",
+    "mods_jsonl": "data\\processed\\steam_workshop\\validation_20260319\\mods.jsonl",
+    "comments_csv": "data\\processed\\steam_workshop\\validation_20260319\\comments.csv",
+    "comments_jsonl": "data\\processed\\steam_workshop\\validation_20260319\\comments.jsonl"
+  }
+}

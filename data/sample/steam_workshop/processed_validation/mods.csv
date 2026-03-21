@@ -1,0 +1,302 @@
+batch_id,crawl_time_utc,source_method,discover_page,discover_rank,mod_id,title,detail_url,preview_image_url,owner_steam_id,creator_display_names,creator_profile_urls,creator_miniprofile_ids,tags,description_text,description_length,unique_visitors,current_subscribers,current_favorites,ratings_count,file_size_text,file_size_bytes,posted_text,updated_text,posted_at_naive,updated_at_naive,raw_detail_path
+validation_20260319,2026-03-19T01:54:06+00:00,public_workshop_html,1,1,661253977,Don't Drop Everything,https://steamcommunity.com/sharedfiles/filedetails/?id=661253977,https://images.steamusercontent.com/ugc/275092284528778749/EE51C164D8E13386F597B72A7B232536DD83025B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false,76561198247062468,"[""Shang""]","[""https://steamcommunity.com/id/vvmm""]","[""286796740""]","[""version:11:15 2020-08-10""]","If You like this, give a thumbs up!
+Hint: When a player dies, The player must have amulets, A will drop.
+Players into a state of the soul after death, not drop all the items.
+http://steamcommunity.com/sharedfiles/filedetails/?id=664113547",238,2928526,2518597,87864,84483,11.626 KB,11905,"7 Apr, 2016 @ 9:31pm","9 Aug, 2020 @ 8:15pm",2016-04-07 21:31:00,2020-08-09 20:15:00,data\raw\steam_workshop\validation_20260319\details\661253977.html
+validation_20260319,2026-03-19T01:54:06+00:00,public_workshop_html,1,2,376333686,Combined Status,https://steamcommunity.com/sharedfiles/filedetails/?id=376333686,https://images.steamusercontent.com/ugc/539643766794230713/9486F35BE935DC54F2A7D1216F725E0444A46C33/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false,76561198025931302,"[""Soilworker"", ""rezecib""]","[""https://steamcommunity.com/id/Soilworker456"", ""https://steamcommunity.com/id/rezecib""]","[""3097331"", ""65665574""]","[""version:1.9.2""]","Supports all versions of Don't Starve (
+Vanilla, Reign of Giants, Shipwrecked, Hamlet
+, Don't Starve Together).
+You can also download from
+GitHub
+[github.com]
+, although that won't auto-update for you. (code contributions also welcome via GitHub)
+This mod enhances the HUD to better show the player's stats and various information about the world, such as temperature, season, and moon phase.
+This is a client-only mod, so whoever has enabled it will see the changes, and whoever doesn't won't, regardless of what server you're on and whether the server has the mod or not.
+Note that unlike Kiopho's Always On Status, I use the game's temperature units directly here, so player temperature can safely vary from 0-70, with freezing/overheating warnings occurring at 5 and 65. (you can change it to C, which works like Kiopho's version, or F if you want)
+Credits to Kiopho (
+Always On Status
+), Soilworker (
+Season Clock
+), and hotmatrixx (
+Better Moon
+) for making the original mods. I completely rewrote all of the code to be more compatible, aesthetic, and easily maintained going forward.
+Configuration Options
+Option
+Description
+Temperature
+Whether to show the temperature of the player. Defaults to
+Show
+.
+Show World Temp
+Whether to show the temperature of the world. Defaults to
+Hide
+.
+Show Temp Badges
+Whether to show small images to indicate which temperature is which. Badges only get shown if this is set to
+Show
+and both player and world temperatures are enabled. Defaults to
+Show
+.
+Temperature Unit
+Whether to use the game's internal units (default), or approximations of Fahrenheit or Celsius.
+In
+Game Units
+, the player freezes at 0 and overheats at 70, with warning occurring 5 away.
+In
+Celsius
+, the player freezes at 0 and overheats at 35, with warning occurring 2.5 degrees away.
+In
+Fahrenheit
+, the player freezes at 32 and overheats at 95, with warning occurring 4.5 degrees away.
+Show Waning
+Whether to show if the moon is waxing or waning by adding new icons. Defaults to
+Show
+. (The game normally only shows icons for one direction). In Don't Starve Together, this is now a feature of the main game, so the option doesn't do anything.
+Show Moon
+Whether to show the moon only at
+Night
+(the game's default), during night and dusk (
+Dusk
+, the mod's default), or
+Always
+.
+Predict Full Moon
+Whether to predict the day of the next full moon, shown when hovering over the moon icon. Defaults to
+Yes
+.
+Flip Moon
+Whether to flip the moon phase icon to show it like it is in the Southern Hemisphere, instead of the default Northern Hemisphere. Defaults to
+No
+.
+Season Clock
+Clock
+, the default, shows a full clock of the seasons.
+Compact
+shows a smaller badge with the season and day count, while
+Micro
+shows an even smaller badge.
+No
+disables the season clock entirely.
+Naughtiness
+Whether to show the naughtiness of the player. Doesn't work in Don't Starve Together (unless
+Insight
+is installed), as  naughtiness is not available to clients. Defaults to
+Show
+.
+Log Meter
+Whether to show the log meter for Woodie when he is human. Only relevant to singleplayer, as Don't Starve Together always shows the log meter already. Defaults to
+Always
+.
+Cave Clock
+Whether to always show the clock in the caves. Only relevant to singleplayer Reign of Giants, as the data is not available in vanilla and the clock shows in Don't Starve Together. Defaults to
+Show
+.
+Stat Numbers
+Whether to show the sanity, hunger, and health numbers without having to mouse over the badges. Defaults to
+Always
+.
+Show Max Text
+Whether to show the ""Max:"" text when hovering over the sanity, hunger, and health badges to see their maximum values. Defaults to
+Show
+.
+Show Clock Text
+Whether to show text on the Clock and Season Clock. Defaults to
+Show
+. If set to
+Hide
+, text will only be shown when mousing over or opening the Controller Inventory.
+HUD Scale
+Lets you adjust the size of the badges and clocks independently of the game's HUD scale. Defaults to
+1
+.",3946,9034306,9509423,287342,84408,1.127 MB,1181745,"16 Jan, 2015 @ 10:30pm","18 Mar, 2024 @ 6:42pm",2015-01-16 22:30:00,2024-03-18 18:42:00,data\raw\steam_workshop\validation_20260319\details\376333686.html
+validation_20260319,2026-03-19T01:54:06+00:00,public_workshop_html,1,3,3342856488,"姐姐救救我(Sister, save me",https://steamcommunity.com/sharedfiles/filedetails/?id=3342856488,https://images.steamusercontent.com/ugc/2504654921732414033/D76852BE84662ADD13F702CE39986ED664F1C787/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false,76561199032104502,"[""Amber喵~""]","[""https://steamcommunity.com/profiles/76561199032104502""]","[""1071838774""]","[""version:1.21""]","此mod是我花钱去定制的，我本身不会制作mod，想着或许有人也需要放出来给大家玩。
+如果对你有所帮助，给我点个赞和收藏吧，我看着开心w
+此mod可以让你在玩其他人物的时候，使用阿比盖尔之花，虽然主要是为了让其他角色也能使用阿比，但关闭①，②选项后，也可以单纯作为玩温蒂时，使用阿比盖尔的加强使用。
+同时可和原版的药剂与姐妹骨灰坛搭配。
+①让阿比盖尔之花给其他角色绑定使用(可关闭)
+②其他角色开局初始物品增加阿比盖尔之花(可关闭)
+③血量提升︰100>300，300>600，600>1000，另有阿比无法被攻击的选项(默认关闭)。
+④阿比盖尔每秒回血(1~30)
+⑤攻击力提升，可调整范围为25%~500%
+⑥攻击范围提升增强(可调整)。
+⑦阿比盖尔可以攻击理智怪兽。
+⑧夏天制冷帮忙降温(建议20~40)。
+⭐此外对于温蒂和阿比盖尔之间也有一些修改
+①""温蒂""召唤阿比盖尔免去扣除理智
+②阿比盖尔存在时，温蒂能够持续回复理智(可调1~50)。
+(姐妹两的羁绊就是最棒的！)
+适用情况:
+萌新入坑，许多怪物都很可怕，理智狂掉被影怪揍？
+饥荒有很多有趣的mod，有些还有些特殊的人物包含在里面，不玩可惜，但是打怪技术又不好？
+又或者你的朋友，卡的要死要死毫无游戏体验？
+这种情况就可以下载本mod，让阿比盖尔姐姐来保护你，让我们一起来做姐姐的小fw！
+我讨厌夏天，太阳对我进行烧烤的画面和声音，因此我让姐姐也可以在夏天制冷陪伴我，毕竟姐姐是幽灵，凉凉的很合理吧？(所以冬天没有制暖是正常的)
+可与饥荒原版阿比盖尔灵药搭配使用。
+⚠以下翻译來自討論區""Diako""友情提供:
+💐 Abigail's Flower Multi-Character Enhancement MOD
+This mod was a custom commission that I paid for—I'm not a mod maker myself, but I thought maybe others would find it useful too, so I'm sharing it for everyone to enjoy!
+If it helps you out, please give it a like and add it to your favorites—it makes me happy to see that! 😄
+With this mod, you can use Abigail’s Flower while playing other characters. While it was mainly made so non-Wendy characters can also use Abigail, if you turn off options ① and ②, it can simply serve as a powerful upgrade when playing as Wendy.
+This mod also works with the original potions and the Sister’s Urn.
+Main Features:
+① Abigail’s Flower usable by other characters (Can be toggled off)
+② Other characters start with Abigail’s Flower as a starting item (Can be toggled off)
+③ Health buff: 100 → 300, 300 → 600, 600 → 1000, with an option to make Abigail invincible (off by default)
+④ Abigail regenerates health per second (Adjustable: 1~30)
+⑤ Attack power boost (Adjustable: 25%500%)
+⑥ Increased attack range (Adjustable)
+⑦ Abigail can attack shadow creatures
+⑧ Cooling effect in summer (Recommended range: 2040)
+Wendy & Abigail Bonding Buffs:
+① Wendy no longer loses sanity when summoning Abigail
+② Wendy gains passive sanity regen while Abigail is present (Adjustable: 1~50)
+(Because their sisterly bond is the best!)
+Who is this mod for?
+New players struggling with tough monsters and sanity loss?
+Want to try fun custom characters from other mods, but combat feels too hard?
+Your friend keeps dying and has no fun playing?
+Let big sis Abigail protect you! With her by your side, you too can become her adorable little sidekick~ 💜
+Author's note:
+I hate summer. The burning sun and the sizzling sounds feel like I’m being barbecued.
+So I gave Abigail a summer cooling feature—makes sense, right? She’s a ghost, after all, and ghosts are cool and chilly! ❄
+(So no heating in winter—that’s perfectly normal!)
+Compatible with the original Abigail elixir and urn from the base game.",2702,290169,116015,4496,4453,1.425 MB,1494220,"4 Oct, 2024 @ 8:17am","18 Nov, 2024 @ 6:53pm",2024-10-04 08:17:00,2024-11-18 18:53:00,data\raw\steam_workshop\validation_20260319\details\3342856488.html
+validation_20260319,2026-03-19T01:54:06+00:00,public_workshop_html,1,4,351325790,Geometric Placement,https://steamcommunity.com/sharedfiles/filedetails/?id=351325790,https://images.steamusercontent.com/ugc/278474310944200808/778A7FDB67AA982E249A87E6C7169087A5756A10/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false,76561198025931302,"[""rezecib""]","[""https://steamcommunity.com/id/rezecib""]","[""65665574""]",[],"Compatible with all versions of the game (Vanilla, Reign of Giants, Shipwrecked, Don't Starve Together-- separately listed on the
+Single-player workshop
+). You can also find it on the
+Klei Forums
+[forums.kleientertainment.com]
+Snaps objects to a grid when placing and displays a build grid around it (unless you hold ctrl).
+Credits to zkm2erjfdb and Levorto for writing the original single-player versions (Architectural Geometry and Assisted Geometry). This mod is a replacement for those mods; if you have one of them enabled as well, unpredictable things will happen.
+Configuration Options
+On the mods screen, with this mod selected, you can change a lot of the settings with the ""Configure"" button.
+CTRL Turns Grid:
+On
+; the grid is normally off, but holding CTRL shows it
+Off
+; (default) the grid is normally on, but holding CTRL hides it
+Options Button
+A key to open an in-game menu for the mod's options. The default button is B on the keyboard. On controllers, using left stick click while on the scoreboard will open it (you can rebind Menu Misc 3 to change it).
+Toggle Button
+A key to toggle between the most recently used geometries (it will guess if it doesn't know, which should only happen if you just transferred between the caves and the surface or joined the game). The default button is V on the keyboard. There is no binding for controllers.
+Snap Grid Button
+A key to make the grid move to have a point at the object under the cursor, or at key points of a tile (center, edge, corner; technically a 5x5 grid of points within a tile). The default button is unbound on the keyboard, no binding for controllers.
+In-Game Menu
+On
+(default) the options button will bring up the menu.
+Off
+it will just toggle the mod on and off (like it did before the menu).
+Show Build Grid
+On
+(default) allows the build grid to be shown
+Off
+never show the build grid
+Grid Geometry
+Square
+(default) is the normal grid, aligned with the game's X-Z coordinate system. Hexagonal geometries allow you to do the tightest possible plots.
+Refresh Rate
+How much of the available time to use for refreshing the grid. Higher settings will make the grid update faster, but may cause lag.
+Hide Cursor Item
+Hide All
+when placing things, hide the object so it doesn't cover up the grid
+Show Number
+hide the object, but keep showing how many you have.
+Show All
+(default) show the object like usual.
+Smart Spacing
+On
+when placing things, the grid spacing adapts to the item being placed; the closest free grid point should always be the closest possible distance.
+Off
+(default) keep the same spacing for everything.
+Fine Grid Size
+How many points in each direction the grid should go when placing things that can be tightly packed. Defaults to 10.
+Walls Grid Size
+How many points in each direction the grid should go when placing walls. Defaults to 6.
+Sandbag Grid Size
+How many points in each direction the grid should go when placing sandbags. Defaults to 5.
+Turf Grid Size
+How many tiles in each direction the grid should go when placing turf. Defaults to 2.
+Grid Colors
+Red/Green
+red for ""can't place"", green for ""can place""
+Red/Blue
+same as red/green, but with blue for ""can place""
+Black/White
+black for ""can't place"", white for ""can place"". A bit easier to see at night
+Outlined
+(default) similar to black/white, but uses black-with-white-outline and white-with-black-outline for the best visibility.
+Tighter Chests
+Yes
+allows you to place chests a little bit closer together, like you can with the Architectural or Assisted Geometry mods. Technically the game doesn't normally let you place them quite that close together, but the difference is small. This doesn't work reliably in DST.
+No
+uses the true spacing for chests.
+Controller Offset
+On
+uses the normal offset, which rotates with the player.
+Off
+(default) keeps the object at the player's feet, making it easier to place it right where you want to.",3893,6618301,6894295,221182,47412,335.868 KB,343928,"4 Dec, 2014 @ 11:22pm","1 Aug, 2023 @ 10:36pm",2014-12-04 23:22:00,2023-08-01 22:36:00,data\raw\steam_workshop\validation_20260319\details\351325790.html
+validation_20260319,2026-03-19T01:54:06+00:00,public_workshop_html,1,5,378160973,Global Positions,https://steamcommunity.com/sharedfiles/filedetails/?id=378160973,https://images.steamusercontent.com/ugc/535134943326895647/0FF32BFCBDF3CDAFD88373F2D76C9DDE50D8C090/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false,76561198025931302,"[""Sarcen"", ""rezecib""]","[""https://steamcommunity.com/profiles/76561197970349754"", ""https://steamcommunity.com/id/rezecib""]","[""10084026"", ""65665574""]","[""version:1.7.5""]","Map sharing works again! You don't even need to be in the
+A New Reign beta
+anymore!
+Code contributions are welcome:
+https://github.com/rezecib/Global-Positions
+Features
+Show other players on the map (and hover over them to see who they are).
+Show player indicators (the bubble things on the side of the screen) when they're far away.
+Light signal fires that show up as indicators and on the map.
+Ping the map by alt+clicking, creating markers that show other players points of interest. Note that muting a player hides their pings. Controller users can ping by clicking in the right stick.
+Opt-out of sharing your location with a button on the scoreboard.
+Share your map discovery with other players automatically
+Wilderness Mode
+By default, if you play in Wilderness Mode, it will ignore most of the config options. If you want to override that, set the Wilderness Mode Override to Enabled. Otherwise, it will hide player positions, but always show campfires.
+Configuration Options
+On the mods screen, with this mod selected, you can change a lot of the settings with the ""Configure"" button.
+Player Indicators
+Always
+makes it so player indicators always show.
+Scoreboard
+(default) only shows them when you bring up the scoreboard.
+Disabled
+removes both the indicators and the map icons.
+Player Icons
+Show
+(default) will show player's map icons on the map.
+Hide
+will hide them.
+Show Fires
+Always
+means they always produce smoke signals when they're lit, so show up globally regardless of fuel used.
+Charcoal
+(default) means you have to fuel them with charcoal to produce smoke signals.
+Disabled
+turns off smoke signals entirely.
+Fire Icons
+Show
+(default) shows fire icons on the map when they are smoking.
+Hide
+doesn't show them even if they're smoking
+Share Map
+Enabled
+(default) makes it so that as other players explore the world, your map will update too. Note that this will only work if players or icons are set to be shown.
+Wilderness Override
+Disabled
+(default) makes it so that in Wilderness Mode,
+Show Fires
+is set to
+Always
+, and
+Player Icons
+and
+Player Indicators
+are
+Disabled
+. This adds some risk of discovery to making fires, so cook with caution!
+Enabled
+makes it use whatever settings you have set yourself, rather than that Wilderness preset.
+Pings
+Enabled
+(default) allows players to alt+click the map to ping areas for others to see.
+Disabled
+doesn't allow pings at all.
+Most options are only used by the host; if you're joining, the only option that gets read is whether to show the player indicators at all times or only on the scoreboard.
+A huge thanks to Sarcen for figuring out his very clever system for getting player icons to show on the map globally for clients!",2691,7362580,7872391,233671,51190,610.661 KB,625316,"19 Jan, 2015 @ 2:59pm","10 Apr, 2024 @ 6:03pm",2015-01-19 14:59:00,2024-04-10 18:03:00,data\raw\steam_workshop\validation_20260319\details\378160973.html

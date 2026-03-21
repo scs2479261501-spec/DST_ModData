@@ -1,0 +1,122 @@
+﻿file_name,page_name,table_role,grain,column_name,column_cn_name,definition
+overview_kpis.csv,概览页,KPI卡片数据,每行一个指标,metric_key,指标编码,指标的程序化键值，用于区分 mod_count、author_count、total_subscriptions。
+overview_kpis.csv,概览页,KPI卡片数据,每行一个指标,metric_label,指标英文标签,给 PowerBI 可视化或字段面板使用的英文标签。
+overview_kpis.csv,概览页,KPI卡片数据,每行一个指标,metric_value,指标原始值,可计算的数值字段，建议卡片图和度量引用此列。
+overview_kpis.csv,概览页,KPI卡片数据,每行一个指标,display_value,展示文本,已经格式化好的展示文本，带千分位，适合直接做卡片显示。
+overview_kpis.csv,概览页,KPI卡片数据,每行一个指标,sort_order,排序序号,控制 KPI 卡片在页面上的显示顺序。
+dim_tags.csv,概览页 / 活跃度页 / 供需页,标签维表,每行一个标准化标签,tag,标准化标签,标签名称，已做 lower(trim) 标准化，并排除 version:* 标签。
+dim_tags.csv,概览页 / 活跃度页 / 供需页,标签维表,每行一个标准化标签,mod_count,标签下 mod 数,带有该标签的 distinct mod 数量，可用于词云大小和筛选热度。
+dim_tags.csv,概览页 / 活跃度页 / 供需页,标签维表,每行一个标准化标签,avg_subscriptions,标签平均订阅,该标签下 mod 的订阅均值，容易受爆款影响，适合作为辅助参考。
+dim_tags.csv,概览页 / 活跃度页 / 供需页,标签维表,每行一个标准化标签,tag_rank_by_mod_count,标签热度排名,按 mod_count 从高到低排序后的排名。
+dim_tags.csv,概览页 / 活跃度页 / 供需页,标签维表,每行一个标准化标签,wordcloud_weight,词云权重,词云建议使用的权重字段，当前口径与 mod_count 相同。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,mod_id,mod ID,Steam publishedfileid，mod 主键。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,title,mod 标题,mod 名称。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,creator_id,作者 Steam ID,API 返回的 creator 字段。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,subscriptions,当前订阅量,当前订阅数，作为 adoption 代理指标。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,votes_up,点赞数,API 返回的 vote_data.votes_up。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,votes_down,点踩数,API 返回的 vote_data.votes_down。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,score,综合评分,Steam API 返回的 score。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,positive_rate,好评率,votes_up / (votes_up + votes_down)，无有效投票时为空。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,time_created_utc,创建时间 UTC,mod 创建时间的 UTC 时间戳。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,time_updated_utc,最后更新时间 UTC,mod 最后更新时间的 UTC 时间戳。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,maintenance_days,维护时长,"DATEDIFF(time_updated_utc, time_created_utc)，表示从创建到最后更新跨越了多少天。"
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,days_since_last_update,距今天数,"DATEDIFF(CURDATE(), time_updated_utc)，表示距最近一次更新已过去多少天。"
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,subscription_median,订阅中位线,当前批次订阅量中位数，当前导出中为 232。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,maintenance_median,维护时长中位线,当前批次维护时长中位数，当前导出中为 1。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,quadrant,四象限编码,evergreen / hit_then_abandoned / passion_project / silent_fade。
+activity_mods.csv,活跃度页,四象限事实表,每行一个可参与四象限分类的 mod,quadrant_label,四象限名称,四象限英文展示名，适合直接做图例。
+activity_mod_tags.csv,活跃度页,mod-标签桥表,每行一条 mod 与标签的对应关系,mod_id,mod ID,对应 activity_mods.csv 里的 mod_id。
+activity_mod_tags.csv,活跃度页,mod-标签桥表,每行一条 mod 与标签的对应关系,tag,标准化标签,对应 dim_tags.csv 里的 tag。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,tag,标准化标签,标签名称，已标准化。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,mod_count,标签供给量,该标签下的 distinct mod 数量。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,avg_subscriptions,平均订阅,该标签下 mod 的订阅均值。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,median_subscriptions,中位订阅,该标签下 mod 的订阅中位数，是供需图的主需求轴。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,p75_subscriptions,P75订阅,该标签下订阅的离散 P75，用于反映中上游表现。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,is_stable_tag,稳定标签标记,1 表示 mod_count >= 100，属于正式商业分析标签。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,supply_median_threshold,供给中位线,标签层面的 mod_count 中位阈值。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,demand_median_threshold,需求中位线,标签层面的 median_subscriptions 中位阈值。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,p75_median_threshold,P75中位线,标签层面的 p75_subscriptions 中位阈值。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,supply_side,供给侧分类,low_supply 或 high_supply。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,demand_side,需求侧分类,low_demand 或 high_demand。
+supply_demand_tags.csv,供需页,标签供需矩阵事实表,每行一个标签,market_zone,市场分区,blue_ocean / red_ocean / crowded_but_strong / cold_niche / low_sample。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,rank_group,分组编码,top_100 或 rank_300_500。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,group_label,分组名称,Top 100 或 Rank 300-500。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,selected_mod_count,原计划 mod 数,按订阅排名落入该组的 mod 数。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,mods_with_comments,有评论样本的 mod 数,成功抓到至少一条评论的 mod 数。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,comment_count,评论总数,成功落盘的评论总数。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,tokenized_comment_count,可分词评论数,至少能提取到一个英文 token 的评论数。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,mod_coverage_pct,mod 覆盖率,mods_with_comments / selected_mod_count * 100。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,tokenized_comment_share_pct,可分词占比,tokenized_comment_count / comment_count * 100。
+comments_group_summary.csv,评论页,评论样本覆盖汇总表,每行一个评论对比组,avg_comments_per_collected_mod,每个成功 mod 平均评论数,comment_count / mods_with_comments。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,token,关键词,英文分词后的关键词。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,top_100_comment_count,Top 100 命中评论数,在 Top 100 组中，包含该词的评论条数。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,rank_300_500_comment_count,300-500 命中评论数,在 Rank 300-500 组中，包含该词的评论条数。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,top_100_comments_per_1000,Top 100 每千评论命中数,Top 100 组的标准化文档频率。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,rank_300_500_comments_per_1000,300-500 每千评论命中数,Rank 300-500 组的标准化文档频率。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,comments_per_1000_diff,每千评论差值,top_100_comments_per_1000 - rank_300_500_comments_per_1000。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,rate_ratio,频率比值,top_100_comments_per_1000 / rank_300_500_comments_per_1000，右组为 0 时可能为空。
+comments_keyword_comparison.csv,评论页,评论关键词差异全量表,每行一个关键词,dominant_group,优势组,该词更偏向 top_100 还是 rank_300_500。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,token,关键词,英文分词后的关键词。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,dominant_group,优势组,该词更偏向 top_100 还是 rank_300_500。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,top_100_comment_count,Top 100 命中评论数,在 Top 100 组中，包含该词的评论条数。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,rank_300_500_comment_count,300-500 命中评论数,在 Rank 300-500 组中，包含该词的评论条数。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,top_100_comments_per_1000,Top 100 每千评论命中数,Top 100 组的标准化文档频率。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,rank_300_500_comments_per_1000,300-500 每千评论命中数,Rank 300-500 组的标准化文档频率。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,comments_per_1000_diff,每千评论差值,top_100_comments_per_1000 - rank_300_500_comments_per_1000。
+comments_top_keywords.csv,评论页,评论关键词展示表,每行一个关键词,rate_ratio,频率比值,top_100_comments_per_1000 / rank_300_500_comments_per_1000。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,creator_id,作者 Steam ID,作者主键。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,mod_count,mod 数量,作者名下 mod 数量。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,total_subscriptions,总订阅量,作者名下全部 mod 的订阅量之和。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,avg_subscriptions,平均订阅量,作者单个 mod 的平均订阅表现。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,median_subscriptions,中位订阅量,作者单个 mod 订阅量的中位数。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,avg_positive_rate,平均好评率,作者名下 mod 的平均好评率。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,avg_maintenance_days,平均维护时长,作者名下 mod 的平均维护跨度。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,tag_breadth,标签覆盖广度,作者覆盖的去重标签数。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,author_rank,作者排名,按 total_subscriptions 从高到低排序。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,productivity_bucket,产量分层,1 / 2-3 / 4-9 / 10+。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,share_of_total_subscriptions_pct,总订阅占比,该作者占整体作者总订阅量的比例。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,cumulative_subscriptions,累计总订阅,按排名累加到当前作者的总订阅量。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,cumulative_share_pct,累计订阅占比,按排名累加到当前作者的总订阅占比。
+authors_productivity.csv,作者页,作者生产力主表,每行一个作者,concentration_band,集中度区间,top_10 / top_1pct_other / others。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,author_count,作者总数,纳入作者分析的作者数量。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,total_subscriptions_all,作者总订阅量,全部作者 total_subscriptions 之和。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,top_1pct_author_count,前1%作者人数,ceil(author_count * 1%)。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,top_1pct_subscriptions,前1%作者总订阅,前 1% 作者贡献的总订阅量。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,top_1pct_share_pct,前1%占比,前 1% 作者占全部作者总订阅量的比例。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,top_10_subscriptions,前10作者总订阅,前 10 名作者贡献的总订阅量。
+authors_concentration_summary.csv,作者页,作者集中度汇总表,单行汇总,top_10_share_pct,前10占比,前 10 名作者占全部作者总订阅量的比例。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,creator_id,作者 Steam ID,作者主键。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,mod_count,mod 数量,作者名下 mod 数量。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,total_subscriptions,总订阅量,作者名下全部 mod 的订阅量之和。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,avg_subscriptions,平均订阅量,作者单个 mod 的平均订阅表现。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,median_subscriptions,中位订阅量,作者单个 mod 订阅量的中位数。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,avg_positive_rate,平均好评率,作者名下 mod 的平均好评率。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,avg_maintenance_days,平均维护时长,作者名下 mod 的平均维护跨度。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,tag_breadth,标签覆盖广度,作者覆盖的去重标签数。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,author_rank,作者排名,按 total_subscriptions 从高到低排序。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,productivity_bucket,产量分层,1 / 2-3 / 4-9 / 10+。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,share_of_total_subscriptions_pct,总订阅占比,该作者占整体作者总订阅量的比例。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,cumulative_subscriptions,累计总订阅,按排名累加到当前作者的总订阅量。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,cumulative_share_pct,累计订阅占比,按排名累加到当前作者的总订阅占比。
+authors_concentration_curve.csv,作者页,作者集中度曲线表,每行一个作者，按 author_rank 排序,concentration_band,集中度区间,top_10 / top_1pct_other / others。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,productivity_bucket,产量分层,1 / 2-3 / 4-9 / 10+。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,author_count,作者数,该分层下的作者数量。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,total_subscriptions,总订阅量,该分层作者的 total_subscriptions 合计。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,avg_total_subscriptions,平均总订阅量,该分层作者平均总订阅量。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,avg_avg_subscriptions,平均单作订阅,该分层作者的 avg_subscriptions 平均值。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,avg_positive_rate,平均好评率,该分层作者的 avg_positive_rate 平均值。
+authors_bucket_summary.csv,作者页,作者产量分层汇总表,每行一个产量分层,avg_maintenance_days,平均维护时长,该分层作者的 avg_maintenance_days 平均值。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,creator_id,作者 Steam ID,作者主键。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,mod_count,mod 数量,作者名下 mod 数量。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,total_subscriptions,总订阅量,作者名下全部 mod 的订阅量之和。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,avg_subscriptions,平均订阅量,作者单个 mod 的平均订阅表现。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,median_subscriptions,中位订阅量,作者单个 mod 订阅量的中位数。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,avg_positive_rate,平均好评率,作者名下 mod 的平均好评率。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,avg_maintenance_days,平均维护时长,作者名下 mod 的平均维护跨度。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,tag_breadth,标签覆盖广度,作者覆盖的去重标签数。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,author_rank,作者排名,按 total_subscriptions 从高到低排序。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,productivity_bucket,产量分层,1 / 2-3 / 4-9 / 10+。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,share_of_total_subscriptions_pct,总订阅占比,该作者占整体作者总订阅量的比例。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,cumulative_subscriptions,累计总订阅,按排名累加到当前作者的总订阅量。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,cumulative_share_pct,累计订阅占比,按排名累加到当前作者的总订阅占比。
+authors_top_20.csv,作者页,作者 Top20 表,每行一个作者,concentration_band,集中度区间,top_10 / top_1pct_other / others。
