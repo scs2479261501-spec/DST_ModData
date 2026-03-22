@@ -20,7 +20,7 @@ function ActivityTooltip({ active, payload }) {
       <div className="font-title font-semibold text-dst-text-title">{item.title}</div>
       <div className="mt-2">订阅量：{formatNumber(item.subscriptions)}</div>
       <div>维护时长：{formatDays(item.maintenanceDays)}</div>
-      <div>距今更新：{formatDays(item.daysSinceLastUpdate)}</div>
+      <div>距今未更新：{formatDays(item.daysSinceLastUpdate)}</div>
       <div className="mt-2 text-dst-text-dim">{getQuadrantMeta(item.quadrant).label}</div>
     </div>
   );
@@ -80,7 +80,7 @@ export default function ActivityPage() {
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {summary.map((item) => (
-          <StatCard key={item.key} label={item.meta.label} value={formatNumber(item.count)} hint={`平均订阅 ${formatCompact(item.avgSubscriptions)} · 平均距今更新 ${formatDays(item.avgDaysSinceUpdate)}`} />
+          <StatCard key={item.key} label={item.meta.label} value={formatNumber(item.count)} hint={`平均订阅 ${formatCompact(item.avgSubscriptions)} · 平均距今未更新 ${formatDays(item.avgDaysSinceUpdate)}`} />
         ))}
       </div>
 

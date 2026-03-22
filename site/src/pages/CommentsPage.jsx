@@ -46,7 +46,7 @@ export default function CommentsPage() {
 
   return (
     <div className="space-y-8">
-      <PageHeader eyebrow="Comments" title="评论关键词差异" description="这里不做推荐/不推荐二分，而是直接比较 Top 100 高订阅 Mod 与第 300-500 名 Mod 的评论差异。当前词频只统计可分词的英文评论。" />
+      <PageHeader eyebrow="Comments" title="评论关键词差异" description="直接比较 Top 100 高订阅 Mod 与第 300-500 名 Mod 的评论差异。当前词频只统计可分词的英文评论。" />
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {state.comments.groups.map((group, index) => (
