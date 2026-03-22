@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Crimson Text', 'Noto Serif SC', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #1a1410;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  color: #e8dcc8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(232, 184, 75, 0.35);
+  color: #f0e0c0;
+}
+
+/* Custom scrollbar — parchment & candlelight */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c4a3a;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e8b84b;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2218;
+}
+
+/* Page fade-in */
+@keyframes dst-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#root {
+  animation: dst-fade-in 300ms ease-out;
+}
+
+@layer components {
+  /* Panel — parchment card */
+  .panel {
+    border: 2px solid #5c4a3a;
+    border-radius: 4px;
+    background-color: #3d3226;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+  }
+
+  .panel-soft {
+    border: 1px solid #5c4a3a;
+    border-radius: 4px;
+    background-color: rgba(61, 50, 38, 0.6);
+  }
+
+  /* Input — dark parchment */
+  .input-dark {
+    @apply w-full px-4 py-3 text-sm outline-none transition;
+    border-radius: 4px;
+    border: 1px solid #5c4a3a;
+    background-color: #2a2218;
+    color: #e8dcc8;
+  }
+
+  .input-dark::placeholder {
+    color: #6b5d4d;
+  }
+
+  .input-dark:focus {
+    border-color: #e8b84b;
+    box-shadow: 0 0 8px rgba(232, 184, 75, 0.2);
+  }
+
+  /* Table shell */
+  .table-shell {
+    border: 2px solid #5c4a3a;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgba(42, 34, 24, 0.5);
+  }
+
+  /* Alternating table rows */
+  .table-row-alt:nth-child(odd) {
+    background-color: #3d3226;
+  }
+
+  .table-row-alt:nth-child(even) {
+    background-color: #352b20;
+  }
+
+  .table-row-alt:hover {
+    background-color: rgba(232, 184, 75, 0.08);
+    transition: background-color 150ms;
+  }
+}
