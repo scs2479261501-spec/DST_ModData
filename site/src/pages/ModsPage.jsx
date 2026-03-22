@@ -137,7 +137,7 @@ export default function ModsPage() {
               <th className="px-4 py-4 font-title font-medium">订阅量</th>
               <th className="px-4 py-4 font-title font-medium">好评率</th>
               <th className="px-4 py-4 font-title font-medium">维护时长</th>
-              <th className="px-4 py-4 font-title font-medium">距今更新</th>
+              <th className="px-4 py-4 font-title font-medium">距今未更新</th>
               <th className="px-4 py-4 font-title font-medium">象限</th>
               <th className="px-4 py-4 font-title font-medium">作者</th>
             </tr>

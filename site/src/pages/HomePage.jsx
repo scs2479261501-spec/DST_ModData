@@ -46,7 +46,7 @@ export default function HomePage() {
     <div className="space-y-8">
       <PageHeader
         eyebrow="Overview"
-        title="把 DST 创意工坊数据变成可浏览的静态站点"
+        title="数据来自 DST 创意工坊"
         description="当前站点覆盖 22,920 个 Mod、9,626 位作者，以及完整的标签、活跃度、作者和评论分析输出。其余页面围绕这些事实表做深入浏览。"
       />
 
@@ -65,7 +65,7 @@ export default function HomePage() {
         <Panel title="浏览入口">
           <div className="grid gap-4 md:grid-cols-2">
             {[
-              ['Mod 排行', '/mods', '先看高订阅作品，再钻到具体 Mod 详情页。'],
+              ['Mod 排行', '/mods', '查看Mod排行和Mod详情页。'],
               ['作者分析', '/authors', '看头部集中度、作者分层和代表性作品。'],
               ['标签供需', '/supply-demand', '直接找蓝海、红海和拥挤但强势的标签。'],
               ['活跃度', '/activity', '用订阅量和维护时长查看四象限结构。'],
