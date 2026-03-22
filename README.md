@@ -95,7 +95,7 @@ dst-mod-analysis/
 ## 如何复现
 
 1. 安装依赖：`pip install -r requirements.txt`
-2. 申请 [Steam Web API Key](https://steamcommunity.com/dev/apikey)
+2. 申请Steam Web API Key
 3. 配置 MySQL 数据库，执行 `sql/create_tables.sql`
 4. 按脚本编号顺序执行 `scripts/01_` 到 `scripts/06_`
 5. 将 `data/processed/dashboard/powerbi_20260319/` 下的 CSV 导入 Power BI Desktop
