@@ -1,0 +1,22 @@
+[
+  {
+    "name": "mod_count_check",
+    "status": "warn",
+    "detail": "CSV not found: D:\\a项目\\DST_ModData\\data\\processed\\steam_api\\20260323\\mods_api_full.csv"
+  },
+  {
+    "name": "null_title_check",
+    "status": "warn",
+    "detail": "CSV not found: D:\\a项目\\DST_ModData\\data\\processed\\steam_api\\20260323\\mods_api_full.csv"
+  },
+  {
+    "name": "top10_stability_check",
+    "status": "warn",
+    "detail": "CSV not found: D:\\a项目\\DST_ModData\\data\\processed\\steam_api\\20260323\\mods_api_full.csv"
+  },
+  {
+    "name": "comment_success_rate",
+    "status": "pass",
+    "detail": "No comment checkpoint to check"
+  }
+]
