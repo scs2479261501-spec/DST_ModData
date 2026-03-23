@@ -71,7 +71,7 @@ export const productivityBucketMeta = {
 export const concentrationBandMeta = {
   top_10: '前 10 作者',
   top_1pct_other: '前 1% 其余作者',
-  others: '长尾作者',
+  others: '其余作者',
 };
 
 export const commentGroupMeta = {
