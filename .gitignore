@@ -16,6 +16,9 @@ data/processed/steam_workshop/top_comments_smoke_20260319/
 # Temp files
 .codex_tmp/
 
+# Logs
+logs/
+
 # OS files
 .DS_Store
 Thumbs.db

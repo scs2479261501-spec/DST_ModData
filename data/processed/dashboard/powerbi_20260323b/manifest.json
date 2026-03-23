@@ -1,0 +1,29 @@
+{
+  "output_batch_id": "powerbi_20260323b",
+  "created_at": "2026-03-23T17:01:26.758795",
+  "source_api_batch_id": "20260323b",
+  "source_comment_batch_id": "top_comments_smoke_20260319",
+  "source_files": {
+    "tag_supply_demand": "data\\processed\\analysis\\tag_supply_demand_matrix_20260319.csv",
+    "author_productivity": "data\\processed\\analysis\\author_productivity_20260319.csv",
+    "comment_keyword_comparison": "data\\processed\\analysis\\comment_keyword_comparison_top_comments_smoke_20260319.csv",
+    "comment_group_summary": "data\\processed\\analysis\\comment_group_summary_top_comments_smoke_20260319.csv",
+    "selected_mods": "data\\processed\\steam_workshop\\top_comments_smoke_20260319\\selected_mods.csv",
+    "top_comments": "data\\processed\\steam_workshop\\top_comments_smoke_20260319\\top_comments.csv"
+  },
+  "outputs": [
+    "data\\processed\\dashboard\\powerbi_20260323b\\activity_mod_tags.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\activity_mods.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\authors_bucket_summary.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\authors_concentration_curve.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\authors_concentration_summary.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\authors_productivity.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\authors_top_20.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\comments_group_summary.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\comments_keyword_comparison.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\comments_top_keywords.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\dim_tags.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\overview_kpis.csv",
+    "data\\processed\\dashboard\\powerbi_20260323b\\supply_demand_tags.csv"
+  ]
+}

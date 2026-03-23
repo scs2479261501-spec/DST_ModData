@@ -1,0 +1,1 @@
+import{j as r}from"./index-BBrNlj8y.js";function d({children:t,className:e="",style:s=void 0}){return r.jsx("span",{className:`inline-flex items-center rounded-sm border border-dst-gold/30 bg-dst-gold/15 px-3 py-1 text-xs text-dst-gold ${e}`.trim(),style:s,children:t})}export{d as T};

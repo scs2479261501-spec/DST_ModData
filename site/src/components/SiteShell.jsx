@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { loadOverview } from '../lib/data';
 
 const navItems = [
   { to: '/', label: '概览' },
@@ -21,6 +22,11 @@ function linkClass({ isActive }) {
 
 export default function SiteShell({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [batchDate, setBatchDate] = useState('');
+
+  useEffect(() => {
+    loadOverview().then((o) => setBatchDate(o.meta.batchDate ?? '')).catch(() => {});
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -71,7 +77,7 @@ export default function SiteShell({ children }) {
       <main className="mx-auto max-w-[1200px] px-4 py-8 sm:px-6 lg:px-8">{children}</main>
 
       <footer className="border-t border-dashed border-dst-border py-6 text-center font-hans text-sm text-dst-text-muted">
-        数据采集于 2026-03-19 · 基于 Steam Web API 与公开页面 · DST Mod 生态分析项目
+        数据采集于 {batchDate || '...'} · 基于 Steam Web API 与公开页面 · DST Mod 生态分析项目
       </footer>
     </div>
   );

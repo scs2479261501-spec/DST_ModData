@@ -1,0 +1,3 @@
+﻿rank_group,group_label,selected_mod_count,mods_with_comments,comment_count,tokenized_comment_count,mod_coverage_pct,tokenized_comment_share_pct,avg_comments_per_collected_mod
+top_100,Top 100,100,39,3900,2429,39.0,62.28,100.0
+rank_300_500,Rank 300-500,201,80,6842,4662,39.8,68.14,85.53

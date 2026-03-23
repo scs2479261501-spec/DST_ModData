@@ -1,0 +1,53 @@
+##############################################################################
+# DST Mod Data Pipeline — Configuration
+# All secrets are read from environment variables, never hardcoded.
+##############################################################################
+
+steam_api:
+  api_key_env: "STEAM_API_KEY"      # env var holding the Steam Web API key
+  app_id: 322330                     # Don't Starve Together
+  request_delay: 1.0                 # seconds between API pages
+  num_per_page: 100                  # items per QueryFiles page
+
+mysql:
+  host_env: "MYSQL_HOST"
+  port_env: "MYSQL_PORT"
+  user_env: "MYSQL_USER"
+  password_env: "MYSQL_PASSWORD"
+  database_env: "MYSQL_DATABASE"
+  defaults:
+    host: "127.0.0.1"
+    port: 3306
+    user: "root"
+    password: ""
+    database: "steamDST"
+  table: "steam_api_mods_raw"
+  chunk_size: 500
+
+collect:
+  api_pages_per_batch: 230           # expected pages, for progress display
+  comment_top_n: 500                 # top-N mods to scrape comments for
+  comment_pages_per_mod: 2           # max comment pages per mod
+  comment_request_delay: 2.0         # seconds between comment fetches (slower)
+
+analysis:
+  stable_tag_threshold: 100          # min mods for a "stable" tag
+  exclude_tag_prefixes:
+    - "version:"
+    - "version_compatible:"
+  comment_min_count: 8               # min combined token count
+  comment_top_keywords: 25           # top keywords per group
+
+validation:
+  mod_count_range: [20000, 30000]
+  max_null_title_pct: 0.01
+  min_comment_success_rate: 0.3
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  analysis_output: "data/processed/analysis"
+  dashboard_output: "data/processed/dashboard"
+  site_data: "site/public/data"
+  site_dir: "site"
+  docs_dir: "docs"

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "mod_count_check",
+    "status": "pass",
+    "detail": "mod_count=22950, expected [20000, 30000]",
+    "mod_count": 22950
+  },
+  {
+    "name": "null_title_check",
+    "status": "pass",
+    "detail": "null_title_pct=0.0034 (78/22950), threshold=0.01"
+  },
+  {
+    "name": "top10_stability_check",
+    "status": "warn",
+    "detail": "overlap=1/10 with previous batch"
+  },
+  {
+    "name": "comment_success_rate",
+    "status": "pass",
+    "detail": "No comment checkpoint to check"
+  }
+]

@@ -47,7 +47,7 @@ export default function HomePage() {
       <PageHeader
         eyebrow="Overview"
         title="数据来自 DST 创意工坊"
-        description="当前站点覆盖 22,920 个 Mod、9,626 位作者，以及完整的标签、活跃度、作者和评论分析输出。其余页面围绕这些事实表做深入浏览。"
+        description={`当前站点覆盖 ${state.overview.items.find((m) => m.key === 'mod_count')?.display ?? formatNumber(state.mods.meta.rowCount)} 个 Mod、${state.overview.items.find((m) => m.key === 'author_count')?.display ?? formatNumber(state.authors.meta.rowCount)} 位作者，以及完整的标签、活跃度、作者和评论分析输出。其余页面围绕这些事实表做深入浏览。`}
       />
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
@@ -56,7 +56,7 @@ export default function HomePage() {
             key={metric.key}
             label={metricLabels[metric.key] ?? metric.label}
             value={metric.display}
-            hint={metric.key === 'subscription_median' || metric.key === 'maintenance_median' ? '四象限分桶参考线' : '来自 2026-03-19 全量批次'}
+            hint={metric.key === 'subscription_median' || metric.key === 'maintenance_median' ? '四象限分桶参考线' : `来自 ${state.overview.meta.batchDate ?? ''} 全量批次`}
           />
         ))}
       </div>
@@ -83,12 +83,12 @@ export default function HomePage() {
           <div className="space-y-4 font-hans text-sm leading-7 text-dst-text">
             <div className="rounded-dst border border-dst-border bg-dst-dark/50 p-4">
               <div className="text-dst-text-dim">Mod 主表</div>
-              <div className="mt-1 font-mono text-xl font-semibold text-dst-gold">{formatNumber(state.mods.meta.rowCount)} 条</div>
+              <div className="mt-1 font-mono text-xl font-semibold text-dst-gold">{state.overview.items.find((m) => m.key === 'mod_count')?.display ?? formatNumber(state.mods.meta.rowCount)} 条</div>
               <div className="mt-2 text-dst-text-dim">用于 Mod 排行、详情页和活跃度页。</div>
             </div>
             <div className="rounded-dst border border-dst-border bg-dst-dark/50 p-4">
               <div className="text-dst-text-dim">作者聚合表</div>
-              <div className="mt-1 font-mono text-xl font-semibold text-dst-gold">{formatNumber(state.authors.meta.rowCount)} 位</div>
+              <div className="mt-1 font-mono text-xl font-semibold text-dst-gold">{state.overview.items.find((m) => m.key === 'author_count')?.display ?? formatNumber(state.authors.meta.rowCount)} 位</div>
               <div className="mt-2 text-dst-text-dim">用于作者排行、作者详情和头部集中度曲线。</div>
             </div>
             <div className="rounded-dst border border-dst-border bg-dst-dark/50 p-4">
