@@ -8,11 +8,12 @@ Usage:
     python scripts/pipeline.py --stage analyze      # analyze only
     python scripts/pipeline.py --stage export       # export + build only
     python scripts/pipeline.py --batch-id 20260323  # explicit batch id
+    python scripts/pipeline.py --env-file .env      # load secrets from .env
 
 Stages (in order):
     collect   → collect_api, collect_comments, import_mysql
     analyze   → quadrant / supply-demand / author / comment analysis
-    export    → dashboard CSV, site JSON, site build
+    export    → dashboard CSV, site JSON, site build 
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ import argparse
 import csv
 import json
 import logging
+import re
 import os
 import shutil
 import subprocess
@@ -47,6 +49,49 @@ def load_config(path: Path | None = None) -> dict[str, Any]:
     cfg_path = path or SCRIPTS_DIR / "pipeline_config.yaml"
     with open(cfg_path, encoding="utf-8") as f:
         return yaml.safe_load(f)
+
+def resolve_env_file(path: str | None) -> Path:
+    candidate = Path(path or ".env")
+    if not candidate.is_absolute():
+        candidate = PROJECT_ROOT / candidate
+    return candidate
+
+
+def _strip_wrapping_quotes(value: str) -> str:
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+        return value[1:-1]
+    return value
+
+
+def load_env_file(path: Path) -> list[str]:
+    """Load KEY=VALUE pairs into os.environ without overriding existing vars."""
+    if not path.exists():
+        return []
+
+    loaded_keys: list[str] = []
+    for line_no, raw_line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[7:].lstrip()
+        if "=" not in line:
+            logger.warning("Ignoring malformed .env line %s in %s", line_no, path)
+            continue
+
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = _strip_wrapping_quotes(value.strip())
+        if not key:
+            logger.warning("Ignoring empty key on .env line %s in %s", line_no, path)
+            continue
+        if key in os.environ:
+            continue
+
+        os.environ[key] = value
+        loaded_keys.append(key)
+    return loaded_keys
+
 
 
 def env_or_default(cfg_section: dict, key_env_field: str, defaults: dict | None = None, field_name: str | None = None) -> str:
@@ -89,6 +134,8 @@ def setup_logging(batch_id: str) -> None:
 
 
 logger = logging.getLogger("pipeline")
+SENSITIVE_ARG_NAMES = {"--api-key", "--password"}
+BATCH_DATE_RE = re.compile(r"(20\d{6})")
 
 
 # ---------------------------------------------------------------------------
@@ -108,7 +155,7 @@ class StageResult:
     def begin(self) -> "StageResult":
         self.status = "running"
         self.start = time.time()
-        logger.info("═══ STAGE [%s] START ═══", self.name)
+        logger.info("=== STAGE [%s] START ===", self.name)
         return self
 
     def succeed(self, **meta: Any) -> "StageResult":
@@ -116,7 +163,7 @@ class StageResult:
         self.end = time.time()
         self.meta.update(meta)
         logger.info(
-            "═══ STAGE [%s] DONE ═══  (%.1fs)",
+            "=== STAGE [%s] DONE ===  (%.1fs)",
             self.name,
             self.end - self.start,
         )
@@ -127,7 +174,7 @@ class StageResult:
         self.end = time.time()
         self.meta["error"] = error
         logger.error(
-            "═══ STAGE [%s] FAILED ═══  %s  (%.1fs)",
+            "=== STAGE [%s] FAILED ===  %s  (%.1fs)",
             self.name,
             error,
             self.end - self.start,
@@ -160,6 +207,13 @@ def find_latest_api_batch(processed_dir: Path) -> str | None:
     return batches[0] if batches else None
 
 
+def batch_sort_key(name: str) -> tuple[str, str]:
+    """Prefer an embedded YYYYMMDD token when ordering batch directories."""
+    matches = BATCH_DATE_RE.findall(name)
+    date_token = matches[-1] if matches else ""
+    return (date_token, name)
+
+
 def find_latest_comment_batch(processed_dir: Path) -> str | None:
     """Return the latest comment collection batch directory name."""
     ws_dir = processed_dir / "steam_workshop"
@@ -167,6 +221,7 @@ def find_latest_comment_batch(processed_dir: Path) -> str | None:
         return None
     batches = sorted(
         [d.name for d in ws_dir.iterdir() if d.is_dir() and "comment" in d.name.lower()],
+        key=batch_sort_key,
         reverse=True,
     )
     return batches[0] if batches else None
@@ -186,12 +241,41 @@ def find_prev_api_csv(processed_dir: Path, current_batch: str) -> Path | None:
     return None
 
 
+def redact_cli_args(cmd: list[str]) -> list[str]:
+    """Return a copy of argv with sensitive values redacted for logging."""
+    redacted: list[str] = []
+    redact_next = False
+    for part in cmd:
+        if redact_next:
+            redacted.append("***REDACTED***")
+            redact_next = False
+            continue
+
+        matched_prefix = next((name for name in SENSITIVE_ARG_NAMES if part.startswith(f"{name}=")), None)
+        if matched_prefix:
+            redacted.append(f"{matched_prefix}=***REDACTED***")
+            continue
+
+        redacted.append(part)
+        if part in SENSITIVE_ARG_NAMES:
+            redact_next = True
+    return redacted
+
+
 def run_script(script_name: str, args: list[str]) -> subprocess.CompletedProcess:
     """Run a sibling Python script as a subprocess."""
     script_path = SCRIPTS_DIR / script_name
     cmd = [sys.executable, str(script_path)] + args
-    logger.info("  → %s", " ".join(cmd))
-    result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(PROJECT_ROOT))
+    logger.info("-" * 50)
+    logger.info("  %s", " ".join(redact_cli_args(cmd)))
+    result = subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        cwd=str(PROJECT_ROOT),
+    )
     if result.stdout:
         for line in result.stdout.strip().splitlines():
             logger.debug("  [stdout] %s", line)
@@ -306,13 +390,20 @@ def stage_import_mysql(cfg: dict, batch_id: str) -> StageResult:
 # Stage: ANALYZE
 # ---------------------------------------------------------------------------
 
-def stage_analyze(cfg: dict, batch_id: str) -> StageResult:
+def stage_analyze(cfg: dict, batch_id: str, stages: dict[str, StageResult] | None = None) -> StageResult:
     """Run analysis scripts: comment text analysis + SQL-based analysis via dashboard export."""
     sr = StageResult("analyze").begin()
     try:
-        # Comment text analysis — find the latest comment batch
+        stages = stages or {}
+
+        # Comment text analysis ? prefer the current run's comment batch, then fall back to latest.
         processed = PROJECT_ROOT / cfg["paths"]["processed_data"]
-        comment_batch = find_latest_comment_batch(processed)
+        comment_batch = None
+        collect_comments_result = stages.get("collect_comments")
+        if collect_comments_result:
+            comment_batch = collect_comments_result.meta.get("comment_batch_id")
+        if not comment_batch:
+            comment_batch = find_latest_comment_batch(processed)
 
         if comment_batch:
             logger.info("  Running comment text analysis for batch: %s", comment_batch)
@@ -404,7 +495,11 @@ def stage_build_site(cfg: dict, batch_id: str) -> StageResult:
         logger.info("  Running npm run build in %s", site_dir)
         result = subprocess.run(
             ["npm", "run", "build"],
-            capture_output=True, text=True, cwd=str(site_dir),
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            cwd=str(site_dir),
             shell=True,  # needed on Windows for npm
         )
         if result.returncode != 0:
@@ -460,9 +555,15 @@ def stage_validate(cfg: dict, batch_id: str, stages: dict[str, StageResult]) -> 
         comment_result = stages.get("collect_comments")
         if comment_result and comment_result.meta.get("comment_batch_id"):
             cb = comment_result.meta["comment_batch_id"]
-            candidate = processed.parent / cfg["paths"]["raw_data"] / "steam_workshop" / cb / "checkpoint.json"
+            candidate = PROJECT_ROOT / cfg["paths"]["raw_data"] / "steam_workshop" / cb / "checkpoint.json"
             if candidate.exists():
                 comment_ckpt = str(candidate)
+        if comment_ckpt is None:
+            latest_comment_batch = find_latest_comment_batch(processed)
+            if latest_comment_batch:
+                candidate = PROJECT_ROOT / cfg["paths"]["raw_data"] / "steam_workshop" / latest_comment_batch / "checkpoint.json"
+                if candidate.exists():
+                    comment_ckpt = str(candidate)
 
         results = run_all_checks(
             api_csv_path=api_csv,
@@ -509,19 +610,19 @@ def write_summary(batch_id: str, total_start: float, stages: dict[str, StageResu
 
     # Print to console
     logger.info("")
-    logger.info("╔══════════════════════════════════════════════════╗")
-    logger.info("║           PIPELINE SUMMARY — %s           ║", batch_id)
-    logger.info("╠══════════════════════════════════════════════════╣")
+    logger.info("=" * 50)
+    logger.info("PIPELINE SUMMARY -- %s", batch_id)
+    logger.info("-" * 50)
     for name, sr in stages.items():
-        icon = "✓" if sr.status == "success" else "✗" if sr.status == "failed" else "—"
-        logger.info("║  %s %-22s %8s  %6.1fs  ║", icon, name, sr.status, sr.duration)
-    logger.info("╠══════════════════════════════════════════════════╣")
-    logger.info("║  Total duration: %8.1fs                      ║", total_duration)
+        icon = "OK" if sr.status == "success" else "ERR" if sr.status == "failed" else ".."
+        logger.info("%3s %-22s %8s  %6.1fs", icon, name, sr.status, sr.duration)
+    logger.info("-" * 50)
+    logger.info("Total duration: %.1fs", total_duration)
     if validation:
         for k, v in validation.items():
-            logger.info("║  %-26s %20s  ║", k, v)
-    logger.info("╚══════════════════════════════════════════════════╝")
-    logger.info("Summary written → %s", summary_path)
+            logger.info("%-26s %20s", k, v)
+    logger.info("=" * 50)
+    logger.info("Summary written -> %s", summary_path)
 
 
 # ---------------------------------------------------------------------------
@@ -547,6 +648,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="Path to pipeline_config.yaml (default: scripts/pipeline_config.yaml)",
     )
     p.add_argument(
+        "--env-file",
+        default=".env",
+        help="Path to a .env file with STEAM_API_KEY / MYSQL_* (default: .env in project root)",
+    )
+    p.add_argument(
         "--skip-comments",
         action="store_true",
         help="Skip comment collection (useful for quick runs)",
@@ -563,10 +669,17 @@ def main() -> int:
     args = build_parser().parse_args()
 
     batch_id = args.batch_id or datetime.now(timezone.utc).strftime("%Y%m%d")
-    cfg = load_config(Path(args.config) if args.config else None)
-
     setup_logging(batch_id)
-    logger.info("Pipeline started — batch_id=%s, stage=%s", batch_id, args.stage)
+
+    env_file = resolve_env_file(args.env_file)
+    loaded_env_keys = load_env_file(env_file)
+    if loaded_env_keys:
+        logger.info("Loaded %s env vars from %s: %s", len(loaded_env_keys), env_file, ", ".join(sorted(loaded_env_keys)))
+    else:
+        logger.info("No env vars loaded from %s", env_file)
+
+    cfg = load_config(Path(args.config) if args.config else None)
+    logger.info("Pipeline started -- batch_id=%s, stage=%s", batch_id, args.stage)
 
     total_start = time.time()
     stages: dict[str, StageResult] = {}
@@ -602,7 +715,7 @@ def main() -> int:
     # ANALYZE group
     # ------------------------------------------------------------------
     if args.stage in ("analyze", "all") and not failed:
-        sr = stage_analyze(cfg, batch_id)
+        sr = stage_analyze(cfg, batch_id, stages)
         stages["analyze"] = sr
         if sr.status == "failed":
             failed = True

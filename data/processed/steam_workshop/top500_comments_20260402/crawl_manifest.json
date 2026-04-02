@@ -1,0 +1,3074 @@
+{
+  "batch_id": "top500_comments_20260402",
+  "started_at_utc": "2026-04-02T13:52:59+00:00",
+  "completed_at_utc": "2026-04-02T14:52:27+00:00",
+  "source_method": "public_workshop_comments_top_n",
+  "source_api_batch": "20260402",
+  "crawl_parameters": {
+    "top_n": 500,
+    "comment_pages": 2,
+    "sleep_seconds": 2.0
+  },
+  "counts": {
+    "mods_selected": 500,
+    "comments_collected": 21723,
+    "failed_mods": 253
+  },
+  "outputs": {
+    "selected_mods_csv": "data\\processed\\steam_workshop\\top500_comments_20260402\\selected_mods.csv",
+    "comments_csv": "data\\processed\\steam_workshop\\top500_comments_20260402\\top_comments.csv",
+    "comments_jsonl": "data\\processed\\steam_workshop\\top500_comments_20260402\\top_comments.jsonl",
+    "checkpoint": "data\\raw\\steam_workshop\\top500_comments_20260402\\checkpoint.json"
+  },
+  "failures": [
+    {
+      "mod_id": "2078243581",
+      "subscription_rank": 21,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2078243581 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1120124958",
+      "subscription_rank": 22,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1120124958 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "836583293",
+      "subscription_rank": 23,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/836583293 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1608191708",
+      "subscription_rank": 24,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1608191708 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "458587300",
+      "subscription_rank": 25,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/458587300 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "569043634",
+      "subscription_rank": 26,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/569043634 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "466732225",
+      "subscription_rank": 27,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/466732225 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1595631294",
+      "subscription_rank": 28,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1595631294 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "786556008",
+      "subscription_rank": 29,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/786556008 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1271089343",
+      "subscription_rank": 30,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1271089343 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1365141672",
+      "subscription_rank": 31,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1365141672 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1378549454",
+      "subscription_rank": 32,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1378549454 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "623749604",
+      "subscription_rank": 33,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/623749604 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2189004162",
+      "subscription_rank": 34,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2189004162 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1699194522",
+      "subscription_rank": 35,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1699194522 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1079538195",
+      "subscription_rank": 36,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1079538195 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2302837868",
+      "subscription_rank": 37,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2302837868 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1991746508",
+      "subscription_rank": 38,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1991746508 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "356930882",
+      "subscription_rank": 39,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/356930882 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1530801499",
+      "subscription_rank": 40,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1530801499 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "572538624",
+      "subscription_rank": 41,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/572538624 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "604761020",
+      "subscription_rank": 62,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/604761020 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1157975551",
+      "subscription_rank": 63,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1157975551 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "363112314",
+      "subscription_rank": 64,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/363112314 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2391246365",
+      "subscription_rank": 65,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2391246365 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1467214795",
+      "subscription_rank": 66,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1467214795 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "396026892",
+      "subscription_rank": 67,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/396026892 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3018652965",
+      "subscription_rank": 68,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3018652965 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "956206484",
+      "subscription_rank": 69,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/956206484 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "447092740",
+      "subscription_rank": 70,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/447092740 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1216718131",
+      "subscription_rank": 71,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1216718131 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1418746242",
+      "subscription_rank": 72,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1418746242 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2657513551",
+      "subscription_rank": 73,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2657513551 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3115280970",
+      "subscription_rank": 74,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3115280970 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1909182187",
+      "subscription_rank": 75,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1909182187 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "728459184",
+      "subscription_rank": 76,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/728459184 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2798599672",
+      "subscription_rank": 77,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2798599672 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "791838548",
+      "subscription_rank": 78,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/791838548 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1898181913",
+      "subscription_rank": 79,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1898181913 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2391292843",
+      "subscription_rank": 80,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2391292843 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "831523966",
+      "subscription_rank": 81,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/831523966 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2823530744",
+      "subscription_rank": 82,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2823530744 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "816057392",
+      "subscription_rank": 83,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/816057392 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2477889104",
+      "subscription_rank": 103,
+      "page": 2,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2477889104?ctp=2 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "356435289",
+      "subscription_rank": 104,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/356435289 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1781410139",
+      "subscription_rank": 105,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1781410139 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1803285852",
+      "subscription_rank": 106,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1803285852 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3044756151",
+      "subscription_rank": 107,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3044756151 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2763963752",
+      "subscription_rank": 108,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2763963752 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "856487758",
+      "subscription_rank": 109,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/856487758 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2555936751",
+      "subscription_rank": 110,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2555936751 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1579421388",
+      "subscription_rank": 111,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1579421388 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2321974509",
+      "subscription_rank": 112,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2321974509 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2784048339",
+      "subscription_rank": 113,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2784048339 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "353697884",
+      "subscription_rank": 114,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/353697884 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3138571948",
+      "subscription_rank": 115,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3138571948 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "397794075",
+      "subscription_rank": 116,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/397794075 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2505341606",
+      "subscription_rank": 117,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2505341606 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "370373189",
+      "subscription_rank": 118,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/370373189 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1289779251",
+      "subscription_rank": 119,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1289779251 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "409184357",
+      "subscription_rank": 120,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/409184357 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2928810007",
+      "subscription_rank": 121,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2928810007 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "714735102",
+      "subscription_rank": 122,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/714735102 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "668708075",
+      "subscription_rank": 123,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/668708075 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1166220990",
+      "subscription_rank": 124,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1166220990 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2898654623",
+      "subscription_rank": 125,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2898654623 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2427481232",
+      "subscription_rank": 126,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2427481232 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1892210190",
+      "subscription_rank": 127,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1892210190 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "699175387",
+      "subscription_rank": 148,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/699175387 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2928652892",
+      "subscription_rank": 149,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2928652892 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "379628839",
+      "subscription_rank": 150,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/379628839 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2420839895",
+      "subscription_rank": 151,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2420839895 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "767776640",
+      "subscription_rank": 152,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/767776640 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2510473186",
+      "subscription_rank": 153,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2510473186 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1296663404",
+      "subscription_rank": 154,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1296663404 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1653324376",
+      "subscription_rank": 155,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1653324376 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "380079744",
+      "subscription_rank": 156,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/380079744 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3383078008",
+      "subscription_rank": 157,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3383078008 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3235319974",
+      "subscription_rank": 158,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3235319974 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "356398534",
+      "subscription_rank": 159,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/356398534 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1200745268",
+      "subscription_rank": 160,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1200745268 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1108032281",
+      "subscription_rank": 161,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1108032281 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "462469447",
+      "subscription_rank": 162,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/462469447 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "804549021",
+      "subscription_rank": 163,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/804549021 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "346968521",
+      "subscription_rank": 164,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/346968521 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "949808360",
+      "subscription_rank": 165,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/949808360 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2979177306",
+      "subscription_rank": 166,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2979177306 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1301033176",
+      "subscription_rank": 167,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1301033176 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "508348231",
+      "subscription_rank": 168,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/508348231 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "913454779",
+      "subscription_rank": 169,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/913454779 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "678340265",
+      "subscription_rank": 190,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/678340265 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "622471256",
+      "subscription_rank": 191,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/622471256 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2571443104",
+      "subscription_rank": 192,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2571443104 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1295277999",
+      "subscription_rank": 193,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1295277999 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2812783478",
+      "subscription_rank": 194,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2812783478 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "818739975",
+      "subscription_rank": 195,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/818739975 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3435352667",
+      "subscription_rank": 196,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3435352667 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1290774114",
+      "subscription_rank": 197,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1290774114 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3353852416",
+      "subscription_rank": 198,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3353852416 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2074508776",
+      "subscription_rank": 218,
+      "page": 2,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2074508776?ctp=2 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "944738665",
+      "subscription_rank": 219,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/944738665 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "697356989",
+      "subscription_rank": 220,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/697356989 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1364606782",
+      "subscription_rank": 221,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1364606782 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "682849998",
+      "subscription_rank": 222,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/682849998 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2281925291",
+      "subscription_rank": 223,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2281925291 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2952059327",
+      "subscription_rank": 224,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2952059327 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1839858501",
+      "subscription_rank": 225,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1839858501 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2578151314",
+      "subscription_rank": 226,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2578151314 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2373346252",
+      "subscription_rank": 227,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2373346252 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "537902048",
+      "subscription_rank": 228,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/537902048 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1628298090",
+      "subscription_rank": 229,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1628298090 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1540284567",
+      "subscription_rank": 230,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1540284567 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "359479220",
+      "subscription_rank": 231,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/359479220 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2464402864",
+      "subscription_rank": 232,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2464402864 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2902364746",
+      "subscription_rank": 233,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2902364746 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1139925855",
+      "subscription_rank": 234,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1139925855 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1349799880",
+      "subscription_rank": 235,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1349799880 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3034588489",
+      "subscription_rank": 236,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3034588489 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2751937554",
+      "subscription_rank": 237,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2751937554 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "936127063",
+      "subscription_rank": 258,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/936127063 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "763014862",
+      "subscription_rank": 259,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/763014862 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1153998909",
+      "subscription_rank": 260,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1153998909 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "797304209",
+      "subscription_rank": 261,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/797304209 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2328604820",
+      "subscription_rank": 262,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2328604820 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "804413673",
+      "subscription_rank": 263,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/804413673 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2371484058",
+      "subscription_rank": 264,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2371484058 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "352499675",
+      "subscription_rank": 265,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/352499675 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2032685784",
+      "subscription_rank": 266,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2032685784 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3382938080",
+      "subscription_rank": 267,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3382938080 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "407977022",
+      "subscription_rank": 268,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/407977022 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2846271782",
+      "subscription_rank": 269,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2846271782 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2528036914",
+      "subscription_rank": 270,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2528036914 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "631648169",
+      "subscription_rank": 271,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/631648169 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3407249185",
+      "subscription_rank": 272,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3407249185 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2904741144",
+      "subscription_rank": 273,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2904741144 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "632082897",
+      "subscription_rank": 274,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/632082897 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2485714729",
+      "subscription_rank": 275,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2485714729 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1581892848",
+      "subscription_rank": 276,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1581892848 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "498383066",
+      "subscription_rank": 277,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/498383066 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3173431824",
+      "subscription_rank": 278,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3173431824 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "807516498",
+      "subscription_rank": 279,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/807516498 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2720251768",
+      "subscription_rank": 300,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2720251768 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2796122895",
+      "subscription_rank": 301,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2796122895 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "354415247",
+      "subscription_rank": 302,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/354415247 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3320235585",
+      "subscription_rank": 303,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3320235585 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "378962221",
+      "subscription_rank": 304,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/378962221 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "589167205",
+      "subscription_rank": 305,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/589167205 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "684041335",
+      "subscription_rank": 306,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/684041335 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2324689937",
+      "subscription_rank": 307,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2324689937 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2805318787",
+      "subscription_rank": 308,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2805318787 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2968712975",
+      "subscription_rank": 309,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2968712975 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "625582678",
+      "subscription_rank": 310,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/625582678 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3223103565",
+      "subscription_rank": 311,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3223103565 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "404983266",
+      "subscription_rank": 312,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/404983266 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2532301630",
+      "subscription_rank": 313,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2532301630 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1888070399",
+      "subscription_rank": 314,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1888070399 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2951068194",
+      "subscription_rank": 315,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2951068194 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2981762440",
+      "subscription_rank": 316,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2981762440 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3342856488",
+      "subscription_rank": 317,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3342856488 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1688661034",
+      "subscription_rank": 318,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1688661034 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "787954095",
+      "subscription_rank": 319,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/787954095 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "346962876",
+      "subscription_rank": 320,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/346962876 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2260439333",
+      "subscription_rank": 341,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2260439333 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "788825160",
+      "subscription_rank": 342,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/788825160 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "370287670",
+      "subscription_rank": 343,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/370287670 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2621090176",
+      "subscription_rank": 344,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2621090176 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1949285742",
+      "subscription_rank": 345,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1949285742 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1899182767",
+      "subscription_rank": 346,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1899182767 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2823458540",
+      "subscription_rank": 347,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2823458540 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "596438350",
+      "subscription_rank": 348,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/596438350 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1840284484",
+      "subscription_rank": 349,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1840284484 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "366048578",
+      "subscription_rank": 350,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/366048578 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "390684095",
+      "subscription_rank": 351,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/390684095 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2431691504",
+      "subscription_rank": 352,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2431691504 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "704471544",
+      "subscription_rank": 353,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/704471544 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "786654500",
+      "subscription_rank": 354,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/786654500 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3415567277",
+      "subscription_rank": 355,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3415567277 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1974725370",
+      "subscription_rank": 356,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1974725370 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1981709850",
+      "subscription_rank": 357,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1981709850 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "384396097",
+      "subscription_rank": 358,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/384396097 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2762415946",
+      "subscription_rank": 359,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2762415946 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2941527805",
+      "subscription_rank": 360,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2941527805 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "359821133",
+      "subscription_rank": 361,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/359821133 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1085586145",
+      "subscription_rank": 362,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1085586145 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3448135812",
+      "subscription_rank": 381,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3448135812 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "829829879",
+      "subscription_rank": 382,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/829829879 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "700056809",
+      "subscription_rank": 383,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/700056809 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1217385169",
+      "subscription_rank": 384,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1217385169 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1918927570",
+      "subscription_rank": 385,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1918927570 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1845106626",
+      "subscription_rank": 386,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1845106626 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "881681992",
+      "subscription_rank": 387,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/881681992 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2334209327",
+      "subscription_rank": 388,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2334209327 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1111658995",
+      "subscription_rank": 389,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1111658995 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "366676924",
+      "subscription_rank": 390,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/366676924 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2488647076",
+      "subscription_rank": 391,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2488647076 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1337321458",
+      "subscription_rank": 392,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1337321458 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2914336761",
+      "subscription_rank": 393,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2914336761 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1944492666",
+      "subscription_rank": 394,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1944492666 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "700236083",
+      "subscription_rank": 395,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/700236083 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "709981066",
+      "subscription_rank": 396,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/709981066 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3095005137",
+      "subscription_rank": 397,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3095005137 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "915530274",
+      "subscription_rank": 398,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/915530274 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1837053004",
+      "subscription_rank": 399,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1837053004 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "441957490",
+      "subscription_rank": 400,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/441957490 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2890376601",
+      "subscription_rank": 401,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2890376601 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2158549297",
+      "subscription_rank": 402,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2158549297 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "503795626",
+      "subscription_rank": 403,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/503795626 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3574405615",
+      "subscription_rank": 404,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3574405615 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "514078314",
+      "subscription_rank": 425,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/514078314 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1594846041",
+      "subscription_rank": 426,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1594846041 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1416705263",
+      "subscription_rank": 427,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1416705263 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2166704267",
+      "subscription_rank": 428,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2166704267 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2797919119",
+      "subscription_rank": 429,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2797919119 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "751626040",
+      "subscription_rank": 430,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/751626040 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2950481491",
+      "subscription_rank": 431,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2950481491 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "723721217",
+      "subscription_rank": 432,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/723721217 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1896968971",
+      "subscription_rank": 433,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1896968971 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2336105249",
+      "subscription_rank": 434,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2336105249 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2336991112",
+      "subscription_rank": 435,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2336991112 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "431003525",
+      "subscription_rank": 436,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/431003525 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2097358269",
+      "subscription_rank": 437,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2097358269 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1894295075",
+      "subscription_rank": 438,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1894295075 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2800798035",
+      "subscription_rank": 439,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2800798035 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "503187227",
+      "subscription_rank": 440,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/503187227 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "358015908",
+      "subscription_rank": 441,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/358015908 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "438211232",
+      "subscription_rank": 442,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/438211232 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "463621557",
+      "subscription_rank": 443,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/463621557 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1309401477",
+      "subscription_rank": 444,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1309401477 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3289112324",
+      "subscription_rank": 445,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3289112324 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "502031011",
+      "subscription_rank": 446,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/502031011 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2601796546",
+      "subscription_rank": 467,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2601796546 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "514758022",
+      "subscription_rank": 468,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/514758022 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1365023186",
+      "subscription_rank": 469,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1365023186 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "743876370",
+      "subscription_rank": 470,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/743876370 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "899583698",
+      "subscription_rank": 471,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/899583698 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2043109179",
+      "subscription_rank": 472,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2043109179 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2963208488",
+      "subscription_rank": 473,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2963208488 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "416991215",
+      "subscription_rank": 474,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/416991215 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "485291255",
+      "subscription_rank": 475,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/485291255 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2229630615",
+      "subscription_rank": 476,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2229630615 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2410382718",
+      "subscription_rank": 477,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2410382718 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "921807272",
+      "subscription_rank": 478,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/921807272 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "1853828038",
+      "subscription_rank": 479,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1853828038 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "454781545",
+      "subscription_rank": 480,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/454781545 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3255665500",
+      "subscription_rank": 481,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3255665500 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "544637010",
+      "subscription_rank": 482,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/544637010 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "829064383",
+      "subscription_rank": 483,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/829064383 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3273001012",
+      "subscription_rank": 484,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3273001012 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2774093373",
+      "subscription_rank": 485,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2774093373 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2906717350",
+      "subscription_rank": 486,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2906717350 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "842702425",
+      "subscription_rank": 487,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/842702425 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "2595875363",
+      "subscription_rank": 488,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2595875363 (Caused by ResponseError('too many 429 error responses'))"
+    },
+    {
+      "mod_id": "3361615927",
+      "subscription_rank": 489,
+      "page": 1,
+      "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3361615927 (Caused by ResponseError('too many 429 error responses'))"
+    }
+  ],
+  "checkpoint": {
+    "batch_id": "top500_comments_20260402",
+    "source_api_batch": "20260402",
+    "top_n": 500,
+    "comment_pages": 2,
+    "next_index": 500,
+    "completed_mods": 500,
+    "comments_collected": 21723,
+    "failed_mods": [
+      {
+        "mod_id": "2078243581",
+        "subscription_rank": 21,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2078243581 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1120124958",
+        "subscription_rank": 22,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1120124958 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "836583293",
+        "subscription_rank": 23,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/836583293 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1608191708",
+        "subscription_rank": 24,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1608191708 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "458587300",
+        "subscription_rank": 25,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/458587300 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "569043634",
+        "subscription_rank": 26,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/569043634 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "466732225",
+        "subscription_rank": 27,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/466732225 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1595631294",
+        "subscription_rank": 28,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1595631294 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "786556008",
+        "subscription_rank": 29,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/786556008 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1271089343",
+        "subscription_rank": 30,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1271089343 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1365141672",
+        "subscription_rank": 31,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1365141672 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1378549454",
+        "subscription_rank": 32,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1378549454 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "623749604",
+        "subscription_rank": 33,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/623749604 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2189004162",
+        "subscription_rank": 34,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2189004162 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1699194522",
+        "subscription_rank": 35,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1699194522 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1079538195",
+        "subscription_rank": 36,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1079538195 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2302837868",
+        "subscription_rank": 37,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2302837868 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1991746508",
+        "subscription_rank": 38,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1991746508 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "356930882",
+        "subscription_rank": 39,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/356930882 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1530801499",
+        "subscription_rank": 40,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1530801499 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "572538624",
+        "subscription_rank": 41,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/572538624 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "604761020",
+        "subscription_rank": 62,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/604761020 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1157975551",
+        "subscription_rank": 63,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1157975551 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "363112314",
+        "subscription_rank": 64,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/363112314 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2391246365",
+        "subscription_rank": 65,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2391246365 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1467214795",
+        "subscription_rank": 66,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1467214795 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "396026892",
+        "subscription_rank": 67,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/396026892 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3018652965",
+        "subscription_rank": 68,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3018652965 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "956206484",
+        "subscription_rank": 69,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/956206484 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "447092740",
+        "subscription_rank": 70,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/447092740 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1216718131",
+        "subscription_rank": 71,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1216718131 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1418746242",
+        "subscription_rank": 72,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1418746242 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2657513551",
+        "subscription_rank": 73,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2657513551 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3115280970",
+        "subscription_rank": 74,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3115280970 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1909182187",
+        "subscription_rank": 75,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1909182187 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "728459184",
+        "subscription_rank": 76,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/728459184 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2798599672",
+        "subscription_rank": 77,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2798599672 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "791838548",
+        "subscription_rank": 78,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/791838548 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1898181913",
+        "subscription_rank": 79,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1898181913 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2391292843",
+        "subscription_rank": 80,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2391292843 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "831523966",
+        "subscription_rank": 81,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/831523966 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2823530744",
+        "subscription_rank": 82,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2823530744 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "816057392",
+        "subscription_rank": 83,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/816057392 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2477889104",
+        "subscription_rank": 103,
+        "page": 2,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2477889104?ctp=2 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "356435289",
+        "subscription_rank": 104,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/356435289 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1781410139",
+        "subscription_rank": 105,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1781410139 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1803285852",
+        "subscription_rank": 106,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1803285852 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3044756151",
+        "subscription_rank": 107,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3044756151 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2763963752",
+        "subscription_rank": 108,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2763963752 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "856487758",
+        "subscription_rank": 109,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/856487758 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2555936751",
+        "subscription_rank": 110,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2555936751 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1579421388",
+        "subscription_rank": 111,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1579421388 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2321974509",
+        "subscription_rank": 112,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2321974509 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2784048339",
+        "subscription_rank": 113,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2784048339 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "353697884",
+        "subscription_rank": 114,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/353697884 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3138571948",
+        "subscription_rank": 115,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3138571948 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "397794075",
+        "subscription_rank": 116,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/397794075 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2505341606",
+        "subscription_rank": 117,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2505341606 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "370373189",
+        "subscription_rank": 118,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/370373189 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1289779251",
+        "subscription_rank": 119,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1289779251 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "409184357",
+        "subscription_rank": 120,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/409184357 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2928810007",
+        "subscription_rank": 121,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2928810007 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "714735102",
+        "subscription_rank": 122,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/714735102 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "668708075",
+        "subscription_rank": 123,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/668708075 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1166220990",
+        "subscription_rank": 124,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1166220990 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2898654623",
+        "subscription_rank": 125,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2898654623 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2427481232",
+        "subscription_rank": 126,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2427481232 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1892210190",
+        "subscription_rank": 127,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1892210190 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "699175387",
+        "subscription_rank": 148,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/699175387 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2928652892",
+        "subscription_rank": 149,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2928652892 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "379628839",
+        "subscription_rank": 150,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/379628839 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2420839895",
+        "subscription_rank": 151,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2420839895 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "767776640",
+        "subscription_rank": 152,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/767776640 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2510473186",
+        "subscription_rank": 153,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2510473186 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1296663404",
+        "subscription_rank": 154,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1296663404 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1653324376",
+        "subscription_rank": 155,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1653324376 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "380079744",
+        "subscription_rank": 156,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/380079744 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3383078008",
+        "subscription_rank": 157,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3383078008 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3235319974",
+        "subscription_rank": 158,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3235319974 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "356398534",
+        "subscription_rank": 159,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/356398534 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1200745268",
+        "subscription_rank": 160,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1200745268 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1108032281",
+        "subscription_rank": 161,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1108032281 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "462469447",
+        "subscription_rank": 162,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/462469447 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "804549021",
+        "subscription_rank": 163,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/804549021 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "346968521",
+        "subscription_rank": 164,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/346968521 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "949808360",
+        "subscription_rank": 165,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/949808360 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2979177306",
+        "subscription_rank": 166,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2979177306 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1301033176",
+        "subscription_rank": 167,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1301033176 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "508348231",
+        "subscription_rank": 168,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/508348231 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "913454779",
+        "subscription_rank": 169,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/913454779 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "678340265",
+        "subscription_rank": 190,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/678340265 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "622471256",
+        "subscription_rank": 191,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/622471256 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2571443104",
+        "subscription_rank": 192,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2571443104 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1295277999",
+        "subscription_rank": 193,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1295277999 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2812783478",
+        "subscription_rank": 194,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2812783478 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "818739975",
+        "subscription_rank": 195,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/818739975 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3435352667",
+        "subscription_rank": 196,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3435352667 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1290774114",
+        "subscription_rank": 197,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1290774114 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3353852416",
+        "subscription_rank": 198,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3353852416 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2074508776",
+        "subscription_rank": 218,
+        "page": 2,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2074508776?ctp=2 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "944738665",
+        "subscription_rank": 219,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/944738665 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "697356989",
+        "subscription_rank": 220,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/697356989 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1364606782",
+        "subscription_rank": 221,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1364606782 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "682849998",
+        "subscription_rank": 222,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/682849998 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2281925291",
+        "subscription_rank": 223,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2281925291 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2952059327",
+        "subscription_rank": 224,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2952059327 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1839858501",
+        "subscription_rank": 225,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1839858501 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2578151314",
+        "subscription_rank": 226,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2578151314 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2373346252",
+        "subscription_rank": 227,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2373346252 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "537902048",
+        "subscription_rank": 228,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/537902048 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1628298090",
+        "subscription_rank": 229,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1628298090 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1540284567",
+        "subscription_rank": 230,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1540284567 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "359479220",
+        "subscription_rank": 231,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/359479220 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2464402864",
+        "subscription_rank": 232,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2464402864 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2902364746",
+        "subscription_rank": 233,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2902364746 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1139925855",
+        "subscription_rank": 234,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1139925855 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1349799880",
+        "subscription_rank": 235,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1349799880 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3034588489",
+        "subscription_rank": 236,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3034588489 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2751937554",
+        "subscription_rank": 237,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2751937554 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "936127063",
+        "subscription_rank": 258,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/936127063 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "763014862",
+        "subscription_rank": 259,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/763014862 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1153998909",
+        "subscription_rank": 260,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1153998909 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "797304209",
+        "subscription_rank": 261,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/797304209 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2328604820",
+        "subscription_rank": 262,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2328604820 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "804413673",
+        "subscription_rank": 263,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/804413673 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2371484058",
+        "subscription_rank": 264,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2371484058 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "352499675",
+        "subscription_rank": 265,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/352499675 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2032685784",
+        "subscription_rank": 266,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2032685784 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3382938080",
+        "subscription_rank": 267,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3382938080 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "407977022",
+        "subscription_rank": 268,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/407977022 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2846271782",
+        "subscription_rank": 269,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2846271782 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2528036914",
+        "subscription_rank": 270,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2528036914 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "631648169",
+        "subscription_rank": 271,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/631648169 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3407249185",
+        "subscription_rank": 272,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3407249185 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2904741144",
+        "subscription_rank": 273,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2904741144 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "632082897",
+        "subscription_rank": 274,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/632082897 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2485714729",
+        "subscription_rank": 275,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2485714729 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1581892848",
+        "subscription_rank": 276,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1581892848 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "498383066",
+        "subscription_rank": 277,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/498383066 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3173431824",
+        "subscription_rank": 278,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3173431824 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "807516498",
+        "subscription_rank": 279,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/807516498 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2720251768",
+        "subscription_rank": 300,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2720251768 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2796122895",
+        "subscription_rank": 301,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2796122895 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "354415247",
+        "subscription_rank": 302,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/354415247 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3320235585",
+        "subscription_rank": 303,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3320235585 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "378962221",
+        "subscription_rank": 304,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/378962221 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "589167205",
+        "subscription_rank": 305,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/589167205 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "684041335",
+        "subscription_rank": 306,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/684041335 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2324689937",
+        "subscription_rank": 307,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2324689937 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2805318787",
+        "subscription_rank": 308,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2805318787 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2968712975",
+        "subscription_rank": 309,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2968712975 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "625582678",
+        "subscription_rank": 310,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/625582678 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3223103565",
+        "subscription_rank": 311,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3223103565 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "404983266",
+        "subscription_rank": 312,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/404983266 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2532301630",
+        "subscription_rank": 313,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2532301630 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1888070399",
+        "subscription_rank": 314,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1888070399 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2951068194",
+        "subscription_rank": 315,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2951068194 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2981762440",
+        "subscription_rank": 316,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2981762440 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3342856488",
+        "subscription_rank": 317,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3342856488 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1688661034",
+        "subscription_rank": 318,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1688661034 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "787954095",
+        "subscription_rank": 319,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/787954095 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "346962876",
+        "subscription_rank": 320,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/346962876 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2260439333",
+        "subscription_rank": 341,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2260439333 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "788825160",
+        "subscription_rank": 342,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/788825160 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "370287670",
+        "subscription_rank": 343,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/370287670 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2621090176",
+        "subscription_rank": 344,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2621090176 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1949285742",
+        "subscription_rank": 345,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1949285742 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1899182767",
+        "subscription_rank": 346,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1899182767 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2823458540",
+        "subscription_rank": 347,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2823458540 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "596438350",
+        "subscription_rank": 348,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/596438350 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1840284484",
+        "subscription_rank": 349,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1840284484 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "366048578",
+        "subscription_rank": 350,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/366048578 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "390684095",
+        "subscription_rank": 351,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/390684095 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2431691504",
+        "subscription_rank": 352,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2431691504 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "704471544",
+        "subscription_rank": 353,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/704471544 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "786654500",
+        "subscription_rank": 354,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/786654500 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3415567277",
+        "subscription_rank": 355,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3415567277 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1974725370",
+        "subscription_rank": 356,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1974725370 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1981709850",
+        "subscription_rank": 357,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1981709850 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "384396097",
+        "subscription_rank": 358,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/384396097 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2762415946",
+        "subscription_rank": 359,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2762415946 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2941527805",
+        "subscription_rank": 360,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2941527805 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "359821133",
+        "subscription_rank": 361,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/359821133 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1085586145",
+        "subscription_rank": 362,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1085586145 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3448135812",
+        "subscription_rank": 381,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3448135812 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "829829879",
+        "subscription_rank": 382,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/829829879 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "700056809",
+        "subscription_rank": 383,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/700056809 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1217385169",
+        "subscription_rank": 384,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1217385169 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1918927570",
+        "subscription_rank": 385,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1918927570 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1845106626",
+        "subscription_rank": 386,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1845106626 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "881681992",
+        "subscription_rank": 387,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/881681992 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2334209327",
+        "subscription_rank": 388,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2334209327 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1111658995",
+        "subscription_rank": 389,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1111658995 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "366676924",
+        "subscription_rank": 390,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/366676924 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2488647076",
+        "subscription_rank": 391,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2488647076 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1337321458",
+        "subscription_rank": 392,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1337321458 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2914336761",
+        "subscription_rank": 393,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2914336761 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1944492666",
+        "subscription_rank": 394,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1944492666 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "700236083",
+        "subscription_rank": 395,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/700236083 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "709981066",
+        "subscription_rank": 396,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/709981066 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3095005137",
+        "subscription_rank": 397,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3095005137 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "915530274",
+        "subscription_rank": 398,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/915530274 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1837053004",
+        "subscription_rank": 399,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1837053004 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "441957490",
+        "subscription_rank": 400,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/441957490 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2890376601",
+        "subscription_rank": 401,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2890376601 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2158549297",
+        "subscription_rank": 402,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2158549297 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "503795626",
+        "subscription_rank": 403,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/503795626 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3574405615",
+        "subscription_rank": 404,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3574405615 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "514078314",
+        "subscription_rank": 425,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/514078314 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1594846041",
+        "subscription_rank": 426,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1594846041 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1416705263",
+        "subscription_rank": 427,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1416705263 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2166704267",
+        "subscription_rank": 428,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2166704267 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2797919119",
+        "subscription_rank": 429,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2797919119 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "751626040",
+        "subscription_rank": 430,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/751626040 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2950481491",
+        "subscription_rank": 431,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2950481491 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "723721217",
+        "subscription_rank": 432,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/723721217 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1896968971",
+        "subscription_rank": 433,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1896968971 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2336105249",
+        "subscription_rank": 434,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2336105249 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2336991112",
+        "subscription_rank": 435,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2336991112 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "431003525",
+        "subscription_rank": 436,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/431003525 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2097358269",
+        "subscription_rank": 437,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2097358269 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1894295075",
+        "subscription_rank": 438,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1894295075 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2800798035",
+        "subscription_rank": 439,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2800798035 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "503187227",
+        "subscription_rank": 440,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/503187227 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "358015908",
+        "subscription_rank": 441,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/358015908 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "438211232",
+        "subscription_rank": 442,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/438211232 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "463621557",
+        "subscription_rank": 443,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/463621557 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1309401477",
+        "subscription_rank": 444,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1309401477 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3289112324",
+        "subscription_rank": 445,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3289112324 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "502031011",
+        "subscription_rank": 446,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/502031011 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2601796546",
+        "subscription_rank": 467,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2601796546 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "514758022",
+        "subscription_rank": 468,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/514758022 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1365023186",
+        "subscription_rank": 469,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1365023186 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "743876370",
+        "subscription_rank": 470,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/743876370 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "899583698",
+        "subscription_rank": 471,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/899583698 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2043109179",
+        "subscription_rank": 472,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2043109179 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2963208488",
+        "subscription_rank": 473,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2963208488 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "416991215",
+        "subscription_rank": 474,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/416991215 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "485291255",
+        "subscription_rank": 475,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/485291255 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2229630615",
+        "subscription_rank": 476,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2229630615 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2410382718",
+        "subscription_rank": 477,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2410382718 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "921807272",
+        "subscription_rank": 478,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/921807272 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "1853828038",
+        "subscription_rank": 479,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/1853828038 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "454781545",
+        "subscription_rank": 480,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/454781545 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3255665500",
+        "subscription_rank": 481,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3255665500 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "544637010",
+        "subscription_rank": 482,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/544637010 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "829064383",
+        "subscription_rank": 483,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/829064383 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3273001012",
+        "subscription_rank": 484,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3273001012 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2774093373",
+        "subscription_rank": 485,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2774093373 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2906717350",
+        "subscription_rank": 486,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2906717350 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "842702425",
+        "subscription_rank": 487,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/842702425 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "2595875363",
+        "subscription_rank": 488,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/2595875363 (Caused by ResponseError('too many 429 error responses'))"
+      },
+      {
+        "mod_id": "3361615927",
+        "subscription_rank": 489,
+        "page": 1,
+        "error": "HTTPSConnectionPool(host='steamcommunity.com', port=443): Max retries exceeded with url: /sharedfiles/filedetails/comments/3361615927 (Caused by ResponseError('too many 429 error responses'))"
+      }
+    ],
+    "updated_at_utc": "2026-04-02T14:52:27+00:00",
+    "completed": true
+  }
+}

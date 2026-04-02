@@ -16,6 +16,7 @@ WITH latest_batch AS (
     ORDER BY MAX(crawl_time_utc) DESC, batch_id DESC
     LIMIT 1
 ),
+
 base AS (
     SELECT
         mod_id,

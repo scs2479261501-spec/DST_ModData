@@ -1,0 +1,23 @@
+﻿tag,mod_count,avg_subscriptions,median_subscriptions,p75_subscriptions,is_stable_tag,supply_median_threshold,demand_median_threshold,p75_median_threshold,supply_side,demand_side,market_zone
+reign of giants compatible,203,21933.31,3321,10384,1,1466,701.0,4098,low_supply,high_demand,blue_ocean
+pet,654,14118.38,1452.5,8195,1,1466,701.0,4098,low_supply,high_demand,blue_ocean
+interface,1419,82509.97,1178,9070,1,1466,701.0,4098,low_supply,high_demand,blue_ocean
+worldgen,609,18500.25,1056,6730,1,1466,701.0,4098,low_supply,high_demand,blue_ocean
+language,508,36482.09,824.0,8548,1,1466,701.0,4098,low_supply,high_demand,blue_ocean
+creature,1439,16421.16,808,4548,1,1466,701.0,4098,low_supply,high_demand,blue_ocean
+environment,1466,23335.0,960.0,6017,1,1466,701.0,4098,high_supply,high_demand,cold_niche
+scenario,464,19334.41,701.0,4098,1,1466,701.0,4098,low_supply,low_demand,cold_niche
+tutorial,317,23765.69,534,3488,1,1466,701.0,4098,low_supply,low_demand,cold_niche
+server_admin,925,16177.24,366,3038,1,1466,701.0,4098,low_supply,low_demand,cold_niche
+utility,2653,43270.02,867,5459,1,1466,701.0,4098,high_supply,high_demand,crowded_but_strong
+art,2519,14673.41,711,4668,1,1466,701.0,4098,high_supply,high_demand,crowded_but_strong
+tweak,3811,25195.93,587,3574,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+item,5287,11482.79,545,3598,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+client_only_mod,2843,29219.48,451,2657,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+other,3606,18445.76,440.0,2892,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+character,7287,7035.29,288,2698,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+server_only_mod,1893,11316.3,253,1837,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+all_clients_require_mod,17928,9173.29,198.0,1742,1,1466,701.0,4098,high_supply,low_demand,red_ocean
+harmful effects,1,12902.0,12902,12902,0,1466,701.0,4098,low_supply,high_demand,low_sample
+helpful effects,1,12902.0,12902,12902,0,1466,701.0,4098,low_supply,high_demand,low_sample
+neutral effects,1,12902.0,12902,12902,0,1466,701.0,4098,low_supply,high_demand,low_sample

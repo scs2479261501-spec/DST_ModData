@@ -113,8 +113,16 @@ def check_comment_success_rate(
         }
     with open(checkpoint_path, encoding="utf-8") as f:
         ckpt = json.load(f)
-    completed = len(ckpt.get("completed_mods", []))
-    failed = len(ckpt.get("failed_mods", []))
+
+    def _count(value: Any) -> int:
+        if isinstance(value, int):
+            return value
+        if isinstance(value, list):
+            return len(value)
+        return 0
+
+    completed = _count(ckpt.get("completed_mods", []))
+    failed = _count(ckpt.get("failed_mods", []))
     total = completed + failed
     rate = completed / total if total else 0
     ok = rate >= min_rate
