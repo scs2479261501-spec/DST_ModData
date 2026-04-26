@@ -1,0 +1,26 @@
+﻿tag,mod_count,avg_subscriptions,tag_rank_by_mod_count,wordcloud_weight
+all_clients_require_mod,18230,9111.19,1,18230
+character,7391,6974.21,2,7391
+item,5405,11354.17,3,5405
+tweak,3902,24887.56,4,3902
+other,3717,18132.9,5,3717
+client_only_mod,2915,28927.65,6,2915
+utility,2732,42642.73,7,2732
+art,2554,14632.23,8,2554
+server_only_mod,1931,11199.99,9,1931
+environment,1499,23052.24,10,1499
+creature,1486,16072.87,11,1486
+interface,1468,80789.22,12,1468
+server_admin,948,16024.73,13,948
+pet,684,13669.98,14,684
+worldgen,620,18420.28,15,620
+language,533,35398.28,16,533
+scenario,478,18977.66,17,478
+tutorial,326,23623.39,18,326
+reign of giants compatible,203,21942.05,19,203
+harmful effects,1,12876.0,20,1
+helpful effects,1,12876.0,21,1
+neutral effects,1,12876.0,22,1
+ui,1,575.0,23,1
+v1.0.1,1,97.0,24,1
+v26.4.3,1,575.0,25,1

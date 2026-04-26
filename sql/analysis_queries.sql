@@ -1,14 +1,4 @@
-﻿-- Module 1: activity quadrant analysis for the latest Steam API batch.
--- Quadrant mapping:
---   evergreen = 常青树
---   hit_then_abandoned = 爆款弃坑
---   passion_project = 用爱发电
---   silent_fade = 沉默消亡
--- Rule: values strictly greater than the median are treated as "high".
---       values equal to or below the median are treated as "low".
--- Source note: rows missing subscriptions or created/updated timestamps are excluded from classification.
-
--- 1) Coverage check and median thresholds.
+﻿
 WITH latest_batch AS (
     SELECT batch_id
     FROM steam_api_mods_raw

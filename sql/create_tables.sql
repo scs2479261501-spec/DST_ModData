@@ -1,7 +1,4 @@
-﻿-- Raw ingestion tables for the initial public-workshop scraping phase.
--- Detail-page posted/updated timestamps come from visible page text and are stored as naive datetimes.
-
-CREATE TABLE IF NOT EXISTS crawl_batches (
+﻿CREATE TABLE IF NOT EXISTS crawl_batches (
     batch_id VARCHAR(64) PRIMARY KEY,
     source_method VARCHAR(64) NOT NULL,
     started_at_utc DATETIME NOT NULL,

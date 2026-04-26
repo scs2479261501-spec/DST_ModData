@@ -1,0 +1,8 @@
+[
+  {
+    "name": "comment_success_rate",
+    "status": "pass",
+    "detail": "success_rate=0.65 (500/772), threshold=0.3",
+    "comment_success_rate": 0.6477
+  }
+]
